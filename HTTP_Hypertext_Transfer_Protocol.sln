@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HTTP_Hypertext_Transfer_Pro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Solution_templated_DIR", "Solution_templated_DIR\Solution_templated_DIR.vcxproj", "{1F60B881-0ECD-4496-A51D-0AE6D28FFDAB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcxproj", "{6B15C23F-2B7B-4DED-BA6A-F00FF7A0C0D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{1F60B881-0ECD-4496-A51D-0AE6D28FFDAB}.Release|x64.Build.0 = Release|x64
 		{1F60B881-0ECD-4496-A51D-0AE6D28FFDAB}.Release|x86.ActiveCfg = Release|Win32
 		{1F60B881-0ECD-4496-A51D-0AE6D28FFDAB}.Release|x86.Build.0 = Release|Win32
+		{6B15C23F-2B7B-4DED-BA6A-F00FF7A0C0D4}.Debug|x64.ActiveCfg = Debug|x64
+		{6B15C23F-2B7B-4DED-BA6A-F00FF7A0C0D4}.Debug|x64.Build.0 = Debug|x64
+		{6B15C23F-2B7B-4DED-BA6A-F00FF7A0C0D4}.Debug|x86.ActiveCfg = Debug|Win32
+		{6B15C23F-2B7B-4DED-BA6A-F00FF7A0C0D4}.Debug|x86.Build.0 = Debug|Win32
+		{6B15C23F-2B7B-4DED-BA6A-F00FF7A0C0D4}.Release|x64.ActiveCfg = Release|x64
+		{6B15C23F-2B7B-4DED-BA6A-F00FF7A0C0D4}.Release|x64.Build.0 = Release|x64
+		{6B15C23F-2B7B-4DED-BA6A-F00FF7A0C0D4}.Release|x86.ActiveCfg = Release|Win32
+		{6B15C23F-2B7B-4DED-BA6A-F00FF7A0C0D4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
