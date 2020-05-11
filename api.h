@@ -3,21 +3,21 @@
 
 typedef struct s_Person_Data
 {
-	const char*					m_person_first_name					=	"Sherifi";
-	const char*					m_person_last_name						=	"Sherifi";
-	const char*					m_person_middle_name					=	"KELO";
-	unsigned short int 			m_person_age							=	25;
-	const char*					m_person_city							=	"New York";
-	const char*					m_person_country						=	"New York";
-	const char*					m_person_state							=	"USA";
+	const char*					m_person_first_name				=	"Sherifi";
+	const char*					m_person_last_name				=	"Sherifi";
+	const char*					m_person_middle_name			=	"KELO";
+	unsigned short int 			m_person_age					=	25;
+	const char*					m_person_city					=	"New York";
+	const char*					m_person_country				=	"New York";
+	const char*					m_person_state					=	"USA";
 	const char*					m_person_gender					=	"male";
 }s_Person_Data;
 
-typedef struct s_User_data
+typedef struct s_User_Data
 {
 	unsigned long long int		m_user_id						=	12739027321;
 	const char*					m_user_name						=	"SHERIFI";
-	const char*					m_user_photo					=	"profile_photo.jpg";
+	const char*					m_user_profle_photo				=	"profile_photo.jpg";
 	const char*					m_user_profile_type				=	"Service";
 	const char*					m_user_bio						=	"Bio of user";
 	const char*					m_user_email					=	"sherifi_co@yahoo.com";
@@ -25,22 +25,63 @@ typedef struct s_User_data
 	const char*					m_user_web						=	"https:://www.sherifi_co.com";
 }s_User_data;
 
-typedef struct s_User_profile_data
+typedef struct s_Profile_Contact_Options
+{
+	long long int				m_NONE						=	0x000000000;
+	long long int				m_PHONE						=	0x000000001;
+	long long int				m_E_MAIL 					=	0x000000002;
+	long long int				m_POST_MAIL					=	0x000000003;
+
+}s_Profile_Contact_Options;
+
+typedef enum e_Profile_Contact_Options
+{
+	NONE,
+	PHONE,
+	E-MAIL,
+	POST_MAIL
+
+}e_Profile_Contact_Options;
+
+typedef struct s_Profile_Display
+{
+	long long int				m_ROOT						=	0x000000000;
+	long long int				m_NONE						=	0x000000001;
+	long long int				m_HIDDEN 					=	0x000000002;
+	long long int				m_PRIVATE					=	0x000000003;
+	long long int				m_PROTECTED					=	0x000000004;
+	long long int				m_PUBLIC					=	0x000000005;
+
+}s_Profile_Display;
+
+typedef enum e_Profile_Display
+{
+	ROOT,
+	NONE,
+	HIDDEN,
+	PRIVATE,
+	PROTECTED,
+	PUBLIC
+}e_Profile_Display;
+
+typedef struct s_User_Profile_Data
 {
 	const char*					m_profile_page					=	"Artarchvogue";
 	const char*					m_profile_category				=	"Service/Enterprice";
 	const char*					m_profile_contact_options		=	"Email/Phone";
+	e_Profile_Contact_Options	m_profile_contact_options		=	PHONE;
 	const char*					m_profile_display				=	"None, Hiden";
+	//e_Profile_Display			m_profile_display				=	PUBLIC;
 }s_User_profile_data;
 
-typedef struct s_Admin_Contact_info
+typedef struct s_Admin_Contact_Info
 {
 	const char*					m_admin_email					=	"sherifi_co@yahoo.com";
 	unsigned long long int		m_admin_phone					=	38971697957;
 
 }s_Admin_Contact_info;
 
-typedef struct s_Business_Categories_list
+typedef struct s_Business_Categories_List
 {
 	std::vector<const char*> vec_A
 	{
