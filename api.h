@@ -40,7 +40,6 @@ typedef enum e_Profile_Contact_Options
 	PHONE,
 	E-MAIL,
 	POST_MAIL
-
 }e_Profile_Contact_Options;
 
 typedef struct s_Profile_Display
