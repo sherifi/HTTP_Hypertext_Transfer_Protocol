@@ -144,6 +144,42 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="sio_http.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="sio_http_caching.h" />
+    <ClInclude Include="sio_http_encoding.h" />
+    <ClInclude Include="sio_http_header_fields.h" />
+    <ClInclude Include="sio_http_keys.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="sio_http_messages.h" />
+    <ClInclude Include="sio_http_parameters.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="sio_http_platform.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="sio_http_status_code.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Utility\Crypto\sio_http_base64.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="sio_http_caching.cpp" />
+    <ClCompile Include="sio_http_encoding.cpp" />
+    <ClCompile Include="sio_http_header_fields.cpp" />
+    <ClCompile Include="sio_http_methods.cpp" />
+    <ClCompile Include="sio_http_methods.h" />
+    <ClCompile Include="sio_http_parameters.cpp" />
+    <ClCompile Include="sio_http_status_code.cpp" />
+    <ClCompile Include="Utility\Crypto\sio_http_base64.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
