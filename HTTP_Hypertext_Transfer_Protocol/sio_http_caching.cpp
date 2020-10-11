@@ -20,7 +20,7 @@ sio_C_HttpCachingRequestDirective::sio_C_HttpCachingRequestDirective(sio_E_HttpC
 	else if (*sio_PE_HttpCachingRequestDirective == sio_E_HttpCachingRequestDirective::MIN_FRESH_REQ) {
 		sio_SS_HttpCachingRequestDirective << "min-refresh=" << sec;
 	}
-	else if (*sio_PE_HttpCachingRequestDirective == sio_E_HttpCachingRequestDirective::NO_TRANSFORM_REQ) {
+	else if (*sio_PE_HttpCachingRequestDirective == sio_E_HttpCachingRequestDirective::NO_TRANSFROM_REQ) {
 		sio_SS_HttpCachingRequestDirective << "no-transform";
 	}
 	else if (*sio_PE_HttpCachingRequestDirective == sio_E_HttpCachingRequestDirective::ONLY_IF_CACHED_REQ) {
@@ -53,7 +53,7 @@ sio_C_HttpCachingResponseDirective::sio_C_HttpCachingResponseDirective(sio_E_Htt
 	else if (*sio_PE_HttpCachingResponseDirective == sio_E_HttpCachingResponseDirective::NO_STORE_RES) {
 		sio_SS_HttpCachingResponseDirective << "no-store";
 	}
-	else if (*sio_PE_HttpCachingResponseDirective == sio_E_HttpCachingResponseDirective::NO_TRANSFORM_RES) {
+	else if (*sio_PE_HttpCachingResponseDirective == sio_E_HttpCachingResponseDirective::NO_TRANSFROM_RES) {
 		sio_SS_HttpCachingResponseDirective << "no-transform";
 	}
 	else if (*sio_PE_HttpCachingResponseDirective == sio_E_HttpCachingResponseDirective::MUST_REVALIDATE_RES) {

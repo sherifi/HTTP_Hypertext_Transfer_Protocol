@@ -38,7 +38,7 @@ namespace sio
 				sio_V_HttpStatusCodeSuccessfulResultStr = "202 Accepted";
 				sio_V_HttpStatusCodeSuccessfulDescription = "The request is accepted for processing, but the processing is not complete.";
 			}
-			else if (*sio_PE_HttpStatusCodeSuccessful == sio_E_HttpStatusCodeSuccessful::NON_AUTHORITATIVE_INFORMATION) {
+			else if (*sio_PE_HttpStatusCodeSuccessful == sio_E_HttpStatusCodeSuccessful::NON_AUTHORITATIVE_INFROMATION) {
 				sio_V_HttpStatusCodeSuccessfulResultNum = 203;
 				sio_V_HttpStatusCodeSuccessfulResultStr = "203 Non-authoritative Information";
 				sio_V_HttpStatusCodeSuccessfulDescription = "The information in the entity header is from a local or third-party copy, not from the original server.";

@@ -82,103 +82,6 @@ namespace sio {
 		}sio_S_HttpControlers;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpHeaderFields
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
-		typedef enum sio_E_HttpHeaderFields {
-			NONE = 0x00000000,
-			GENERAL_HEADER = 0x00000001,
-			CLIENT_REQUEST_HEADER = 0x00000002,
-			SERVER_RESPONSE_HEADER = 0x00000004,
-			ENTITY_HEADER = 0x00000008
-		}sio_E_HttpHeaderFields;
-
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpHeaderFields
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
-		typedef class sio_C_HttpHeaderFields : sio_S_HttpControlers {
-		private:
-			const char* sio_V_name;
-			std::string sio_V_HttpHeaderFieldsResult;
-			std::stringstream sio_SS_HttpHeaderFields;
-		public:
-			sio_C_HttpHeaderFields() = delete;
-			std::string sio_FN_GetHttpHeaderFields();
-		}sio_C_HttpHeaderFields;
-
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpGeneralHeader
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
-		typedef enum sio_E_HttpGeneralHeader {
-			NONE = 0x00000000,
-			CACHE_CONTROL = 0x00000001,
-			CONNECTION = 0x00000002,
-			DATE = 0x00000004,
-			PRAGMA = 0x00000008,
-			TRAILER = 0x00000010,
-			TRANSFER_ENCODING = 0x00000020,
-			UPGRADE = 0x00000040,
-			VIA = 0x00000080,
-			WARNING = 0x00000100
-		}sio_E_HttpGeneralHeader;
-
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpGeneralHeader
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
-		typedef class sio_C_HttpGeneralHeader : sio_S_HttpControlers {
-		private:
-			const char* sio_V_name;
-			std::string sio_V_HttpGeneralHeaderResult;
-			std::stringstream sio_SS_HttpGeneralHeader;
-		public:
-			sio_C_HttpGeneralHeader() = delete;
-			std::string sio_FN_GetHttpGeneralHeader();
-		}sio_C_HttpGeneralHeader;
-
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpGeneralHeaderCacheControl
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
-		typedef enum sio_E_HttpGeneralHeaderCacheControl {
-			NONE = 0x00000000,
-			CACHE_REQUEST_DIRECTIVE = 0x00000001,
-			CACHE_RESPONSE_DIRECTIVE = 0x00000002
-		}sio_E_HttpGeneralHeaderCacheControl;
-
-		////////////////////////////////////////////////////////////////////////////////
 		//        NAME: sio_E_HttpGeneralHeaderCacheControlRequestDirective
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
@@ -199,29 +102,6 @@ namespace sio {
 			ONLY_IF_CACHED_REQ = 0x00000040
 		}sio_E_HttpGeneralHeaderCacheControlRequestDirective;
 
-		inline const char* sio_FN_ToStringDiscription(sio_E_HttpGeneralHeaderCacheControlRequestDirective& sio_PE_HttpGeneralHeaderCacheControlRequestDirective) {
-			switch (sio_PE_HttpGeneralHeaderCacheControlRequestDirective) {
-			case NONE: return "NONE";
-				break;
-			case NO_CACHE_REQ: return "A cache must not use the response to satisfy a subsequent request without successful revalidation with the origin server.";
-				break;
-			case NO_STORE_REQ: return "The cache should not store anything about the client request or server response.";
-				break;
-			case MAX_AGE_REQ: return "Indicates that the client is willing to accept a response whose age is not greater than the specified time in seconds.";
-				break;
-			case MAX_STALE_REQ: return "Indicates that the client is willing to accept a response that has exceeded its expiration time. If seconds are given, it must not be expired by more than that time.";
-				break;
-			case MIN_FRESH_REQ: return "Indicates that the client is willing to accept a response whose freshness lifetime is not less than its current age plus the specified time in seconds.";
-				break;
-			case NO_TRANSFORM_REQ: return "Does not convert the entity-body.";
-				break;
-			case ONLY_IF_CACHED_REQ: return "Does not retrieve new data. The cache can send a document only if it is in the cache, and should not contact the origin-server to see if a newer copy exists.";
-				break;
-			default: "Unknowed";
-				break;
-			};
-		};
-
 		////////////////////////////////////////////////////////////////////////////////
 		//        NAME: sio_C_HttpGeneralHeaderCacheControlRequestDirective
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
@@ -235,12 +115,14 @@ namespace sio {
 		typedef class sio_C_HttpGeneralHeaderCacheControlRequestDirective : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
+			std::string sio_V_HttpGeneralHeaderCacheControlRequestDirectiveDescription;
 			std::string sio_V_HttpGeneralHeaderCacheControlRequestDirectiveResult;
 			std::stringstream sio_SS_HttpGeneralHeaderCacheControlRequestDirective;
 		public:
 			sio_C_HttpGeneralHeaderCacheControlRequestDirective() = delete;
 			sio_C_HttpGeneralHeaderCacheControlRequestDirective(sio_E_HttpGeneralHeaderCacheControlRequestDirective* sio_PE_HttpGeneralHeaderCacheControlRequestDirective, uint32_t sec);
 			std::string sio_FN_GetHttpGeneralHeaderCacheControlRequestDirective();
+			std::string sio_FN_GetHttpGeneralHeaderCacheControlRequestDirectiveDescription();
 		}sio_C_HttpGeneralHeaderCacheControlRequestDirective;
 
 		////////////////////////////////////////////////////////////////////////////////
@@ -266,33 +148,6 @@ namespace sio {
 			S_MAXAGE_RES = 0x00000100
 		}sio_E_HttpGeneralHeaderCacheControlResponseDirective;
 
-		inline const char* sio_FN_ToStringDiscription(sio_E_HttpGeneralHeaderCacheControlResponseDirective& sio_PE_HttpGeneralHeaderCacheControlResponseDirective) {
-			switch (sio_PE_HttpGeneralHeaderCacheControlResponseDirective) {
-			case NONE: return "NONE";
-				break;
-			case PUBLIC_RES: return "Indicates that the response may be cached by any cache.";
-				break;
-			case PRIVATE_RES: return "Indicates that all or part of the response message is intended for a single user and must not be cached by a shared cache.";
-				break;
-			case NO_CACHE_RES: return "A cache must not use the response to satisfy a subsequent request without successful re-validation with the origin server.";
-				break;
-			case NO_STORE_RES: return "The cache should not store anything about the client request or server response.";
-				break;
-			case NO_TRANSFORM_RES: return "Does not convert the entity-body.";
-				break;
-			case MUST_REVALIDATE_RES: return "The cache must verify the status of the stale documents before using it and expired ones should not be used.";
-				break;
-			case PROXY_REVALIDATE_RES: return "The proxy-revalidate directive has the same meaning as the must- revalidate directive, except that it does not apply to non-shared user agent caches.";
-				break;
-			case MAX_AGE_RES: return "Indicates that the client is willing to accept a response whose age is not greater than the specified time in seconds.";
-				break;
-			case S_MAXAGE_RES: return "The maximum age specified by this directive overrides the maximum age specified by either the max-age directive or the Expires header. The s-maxage directive is always ignored by a private cache.";
-				break;
-			default: "Unknowed";
-				break;
-			};
-		};
-
 		////////////////////////////////////////////////////////////////////////////////
 		//        NAME: sio_C_HttpGeneralHeaderCacheControlResponseDirective
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
@@ -306,13 +161,56 @@ namespace sio {
 		typedef class sio_C_HttpGeneralHeaderCacheControlResponseDirective : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
+			std::string sio_V_HttpGeneralHeaderCacheControlResponseDirectiveDescription;
 			std::string sio_V_HttpGeneralHeaderCacheControlResponseDirectiveResult;
 			std::stringstream sio_SS_HttpGeneralHeaderCacheControlResponseDirective;
 		public:
 			sio_C_HttpGeneralHeaderCacheControlResponseDirective() = delete;
 			sio_C_HttpGeneralHeaderCacheControlResponseDirective(sio_E_HttpGeneralHeaderCacheControlResponseDirective* sio_PE_HttpGeneralHeaderCacheControlResponseDirective, uint32_t sec);
 			std::string sio_FN_GetHttpGeneralHeaderCacheControlResponseDirective();
+			std::string sio_FN_GetHttpGeneralHeaderCacheControlResponseDirectiveDescription();
 		}sio_C_HttpGeneralHeaderCacheControlResponseDirective;
+
+		////////////////////////////////////////////////////////////////////////////////
+		//        NAME: sio_E_HttpGeneralHeaderCacheControl
+		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
+		//   ARGUMENTS: N/A
+		// USES GLOBAL: N/A
+		// MODIFIES GL: N/A
+		//     RETURNS: N/A
+		//      AUTHOR: SHERIFI
+		// AUTHOR/DATE: GMT Saturday, July 12, 2020
+		////////////////////////////////////////////////////////////////////////////////
+		typedef enum sio_E_HttpGeneralHeaderCacheControl {
+			NONE = 0x00000000,
+			CACHE_REQUEST_DIRECTIVE = 0x00000001,
+			CACHE_RESPONSE_DIRECTIVE = 0x00000002
+		}sio_E_HttpGeneralHeaderCacheControl;
+
+		////////////////////////////////////////////////////////////////////////////////
+		//        NAME: sio_C_HttpGeneralHeaderCacheControl
+		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
+		//   ARGUMENTS: N/A
+		// USES GLOBAL: N/A
+		// MODIFIES GL: N/A
+		//     RETURNS: N/A
+		//      AUTHOR: SHERIFI
+		// AUTHOR/DATE: GMT Saturday, July 12, 2020
+		////////////////////////////////////////////////////////////////////////////////
+		typedef class sio_C_HttpGeneralHeaderCacheControl : sio_S_HttpControlers {
+		private:
+			const char* sio_V_name;
+			std::string sio_V_HttpGeneralHeaderCacheControlResult;
+			std::stringstream sio_SS_HttpGeneralHeaderCacheControl;
+		public:
+			sio_C_HttpGeneralHeaderCacheControl() = delete;
+			sio_C_HttpGeneralHeaderCacheControl(
+				sio_E_HttpGeneralHeaderCacheControl* sio_PE_HttpGeneralHeaderCacheControl,
+				sio_C_HttpGeneralHeaderCacheControlRequestDirective* sio_PC_HttpGeneralHeaderCacheControlRequestDirective,
+				sio_C_HttpGeneralHeaderCacheControlResponseDirective* sio_PC_HttpGeneralHeaderCacheControlResponseDirective
+				);
+			std::string sio_FN_GetHttpGeneralHeaderCacheControl();
+		}sio_C_HttpGeneralHeaderCacheControl;
 
 		////////////////////////////////////////////////////////////////////////////////
 		//        NAME: sio_E_HttpGeneralHeaderConnection
@@ -627,7 +525,7 @@ namespace sio {
 		}sio_C_HttpGeneralHeaderWarning;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeader
+		//        NAME: sio_E_HttpGeneralHeader
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -636,32 +534,21 @@ namespace sio {
 		//      AUTHOR: SHERIFI
 		// AUTHOR/DATE: GMT Saturday, July 12, 2020
 		////////////////////////////////////////////////////////////////////////////////
-		typedef enum sio_E_HttpClientRequestHeader {
+		typedef enum sio_E_HttpGeneralHeader {
 			NONE = 0x00000000,
-			ACCEPT = 0x00000001,
-			ACCEPT_CHARSET = 0x00000002,
-			ACCEPT_ENCODING = 0x00000004,
-			ACCEPT_LANGUAGE = 0x00000008,
-			AUTHORIZATION = 0x00000010,
-			COOKIE = 0x00000020,
-			EXPECT = 0x00000040,
-			FORM = 0x00000080,
-			HOST = 0x00000100,
-			IF_MATCH = 0x00000200,
-			IF_MODIFIED_SINCE = 0x00000400,
-			IF_NOT_MATCH = 0x00000800,
-			IF_RANGE = 0x00000800,
-			IF_UNMODIFIED_SINCE = 0x00000800,
-			MAX_FORWARDS = 0x00001000,
-			PROXY_AUTHORIZATION = 0x00002000,
-			RANGE = 0x00004000,
-			REFERE = 0x00008000,
-			TE = 0x00010000,
-			USER_AGENT = 0x00020000
-		}sio_E_HttpClientRequestHeader;
+			CACHE_CONTROL = 0x00000001,
+			CONNECTION = 0x00000002,
+			DATE = 0x00000004,
+			PRAGMA = 0x00000008,
+			TRAILER = 0x00000010,
+			TRANSFER_ENCODING = 0x00000020,
+			UPGRADE = 0x00000040,
+			VIA = 0x00000080,
+			WARNING = 0x00000100
+		}sio_E_HttpGeneralHeader;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeader
+		//        NAME: sio_C_HttpGeneralHeader
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -670,16 +557,27 @@ namespace sio {
 		//      AUTHOR: SHERIFI
 		// AUTHOR/DATE: GMT Saturday, July 12, 2020
 		////////////////////////////////////////////////////////////////////////////////
-		typedef class sio_C_HttpClientRequestHeader : sio_S_HttpControlers {
+		typedef class sio_C_HttpGeneralHeader : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
-			std::string sio_V_HttpClientRequestHeaderResult;
-			std::stringstream sio_SS_HttpClientRequestHeader;
+			std::string sio_V_HttpGeneralHeaderResult;
+			std::stringstream sio_SS_HttpGeneralHeader;
 		public:
-			sio_C_HttpClientRequestHeader() = default;
-			void sio_FN_SetHttpClientRequestHeader();
-			std::string sio_FN_GetHttpClientRequestHeader(sio_E_HttpClientRequestHeader& sio_PE_HttpClientRequestHeader);
-		}sio_C_HttpClientRequestHeader;
+			sio_C_HttpGeneralHeader() = delete;
+			sio_C_HttpGeneralHeader(
+				sio_E_HttpGeneralHeader* sio_PE_HttpGeneralHeader,
+				sio_C_HttpGeneralHeaderCacheControl* sio_PC_HttpGeneralHeaderCacheControl,
+				sio_C_HttpGeneralHeaderConnection* sio_PC_HttpGeneralHeaderConnection,
+				sio_C_HttpGeneralHeaderDate* sio_PC_HttpGeneralHeaderDate,
+				sio_C_HttpGeneralHeaderPragma* sio_PC_HttpGeneralHeaderPragma,
+				sio_C_HttpGeneralHeaderTrailer* sio_PC_HttpGeneralHeaderTrailer,
+				sio_C_HttpGeneralHeaderTransferEncoding* sio_PC_HttpGeneralHeaderTransferEncoding,
+				sio_C_HttpGeneralHeaderUpgrade* sio_PC_HttpGeneralHeaderUpgrade,
+				sio_C_HttpGeneralHeaderVia* sio_PC_HttpGeneralHeaderVia,
+				sio_C_HttpGeneralHeaderWarning* sio_PC_HttpGeneralHeaderWarning
+			);
+			std::string sio_FN_GetHttpGeneralHeader();
+		}sio_C_HttpGeneralHeader;
 
 		////////////////////////////////////////////////////////////////////////////////
 		//        NAME: sio_E_HttpClientRequestHeaderAccept
@@ -1506,7 +1404,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderUserAgent;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpServerResponseHeader
+		//        NAME: sio_E_HttpClientRequestHeader
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1515,22 +1413,32 @@ namespace sio {
 		//      AUTHOR: SHERIFI
 		// AUTHOR/DATE: GMT Saturday, July 12, 2020
 		////////////////////////////////////////////////////////////////////////////////
-		typedef enum sio_E_HttpServerResponseHeader {
+		typedef enum sio_E_HttpClientRequestHeader {
 			NONE = 0x00000000,
-			ACCEPT_RANGES = 0x00000001,
-			AGE = 0x00000002,
-			ETAG = 0x00000004,
-			LOCATION = 0x00000008,
-			PROXY_AUTHORIZATION = 0x00000010,
-			RETRY_AFTER = 0x00000020,
-			SERVER = 0x00000040,
-			SET_COOKIE = 0x00000080,
-			VARY = 0x00000100,
-			WWW_AUTHENTICATION = 0x00000200,
-		}sio_E_HttpServerResponseHeader;
+			ACCEPT = 0x00000001,
+			ACCEPT_CHARSET = 0x00000002,
+			ACCEPT_ENCODING = 0x00000004,
+			ACCEPT_LANGUAGE = 0x00000008,
+			AUTHORIZATION = 0x00000010,
+			COOKIE = 0x00000020,
+			EXPECT = 0x00000040,
+			FROM = 0x00000080,
+			HOST = 0x00000100,
+			IF_MATCH = 0x00000200,
+			IF_MODIFIED_SINCE = 0x00000400,
+			IF_NOT_MATCH = 0x00000800,
+			IF_RANGE = 0x00000800,
+			IF_UNMODIFIED_SINCE = 0x00000800,
+			MAX_FORWARDS = 0x00001000,
+			PROXY_AUTHORIZATION = 0x00002000,
+			RANGE = 0x00004000,
+			REFERE = 0x00008000,
+			TE = 0x00010000,
+			USER_AGENT = 0x00020000
+		}sio_E_HttpClientRequestHeader;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpServerResponseHeader
+		//        NAME: sio_C_HttpClientRequestHeader
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1539,16 +1447,38 @@ namespace sio {
 		//      AUTHOR: SHERIFI
 		// AUTHOR/DATE: GMT Saturday, July 12, 2020
 		////////////////////////////////////////////////////////////////////////////////
-		typedef class sio_C_HttpServerResponseHeader : sio_S_HttpControlers {
+		typedef class sio_C_HttpClientRequestHeader : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
-			std::string sio_V_HttpServerResponseHeaderResult;
-			std::stringstream sio_SS_HttpServerResponseHeader;
+			std::string sio_V_HttpClientRequestHeaderResult;
+			std::stringstream sio_SS_HttpClientRequestHeader;
 		public:
-			sio_C_HttpServerResponseHeader() = delete;
-			sio_C_HttpServerResponseHeader(sio_E_HttpServerResponseHeader* sio_PE_HttpServerResponseHeader);
-			std::string sio_FN_GetHttpServerResponseHeader();
-		}sio_C_HttpServerResponseHeader;
+			sio_C_HttpClientRequestHeader() = default;
+			void sio_FN_SetHttpClientRequestHeader();
+			std::string sio_FN_GetHttpClientRequestHeader(
+				sio_E_HttpClientRequestHeader* sio_PE_HttpClientRequestHeader,
+				sio_C_HttpClientRequestHeaderAccept* sio_PC_HttpClientRequestHeaderAccept,
+				sio_C_HttpClientRequestHeaderAcceptCharset* sio_PC_HttpClientRequestHeaderAcceptCharset,
+				sio_C_HttpClientRequestHeaderAcceptEncoding* sio_PC_HttpClientRequestHeaderAcceptEncoding,
+				sio_C_HttpClientRequestHeaderAcceptLanguage* sio_PC_HttpClientRequestHeaderAcceptLanguage,
+				sio_C_HttpClientRequestHeaderAuthorization* sio_PC_HttpClientRequestHeaderAuthorization,
+				sio_C_HttpClientRequestHeaderCookie* sio_PC_HttpClientRequestHeaderCookie,
+				sio_C_HttpClientRequestHeaderExpect* sio_PC_HttpClientRequestHeaderExpect,
+				sio_C_HttpClientRequestHeaderFrom* sio_PC_HttpClientRequestHeaderFrom,
+				sio_C_HttpClientRequestHeaderHost* sio_PC_HttpClientRequestHeaderHost,
+				sio_C_HttpClientRequestHeaderIfMatch* sio_PC_HttpClientRequestHeaderIfMatch,
+				sio_C_HttpClientRequestHeaderIfModifiedSince* sio_PC_HttpClientRequestHeaderIfModifiedSince,
+				sio_C_HttpClientRequestHeaderIfNotMatch* sio_PC_HttpClientRequestHeaderIfNotMatch,
+				sio_C_HttpClientRequestHeaderIfRange* sio_PC_HttpClientRequestHeaderIfRange,
+				sio_C_HttpClientRequestHeaderIfUnmodifiedSince* sio_PC_HttpClientRequestHeaderIfUnmodifiedSince,
+				sio_C_HttpClientRequestHeaderMaxForwards* sio_PC_HttpClientRequestHeaderMaxForwards,
+				sio_C_HttpClientRequestHeaderProxyAuthorization* sio_PC_HttpClientRequestHeaderProxyAuthorization,
+				sio_C_HttpClientRequestHeaderRange* sio_PC_HttpClientRequestHeaderRange,
+				sio_C_HttpClientRequestHeaderRefere* sio_PC_HttpClientRequestHeaderRefere,
+				sio_C_HttpClientRequestHeaderTe* sio_PC_HttpClientRequestHeaderTe,
+				sio_C_HttpClientRequestHeaderUserAgent* sio_PC_HttpClientRequestHeaderUserAgent
+			);
+		}sio_C_HttpClientRequestHeader;
 
 		////////////////////////////////////////////////////////////////////////////////
 		//        NAME: sio_E_HttpServerResponseHeaderAcceptRanges
@@ -1994,7 +1924,7 @@ namespace sio {
 		}sio_C_HttpServerResponseHeaderWwwAuthentication;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpEntityHeader
+		//        NAME: sio_E_HttpServerResponseHeader
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -2003,22 +1933,22 @@ namespace sio {
 		//      AUTHOR: SHERIFI
 		// AUTHOR/DATE: GMT Saturday, July 12, 2020
 		////////////////////////////////////////////////////////////////////////////////
-		typedef enum sio_E_HttpEntityHeader {
+		typedef enum sio_E_HttpServerResponseHeader {
 			NONE = 0x00000000,
-			ALLOW = 0x00000001,
-			CONTENT_ENCODING = 0x00000002,
-			CONTENT_LANGUAGE = 0x00000004,
-			CONTENT_LENGTH = 0x00000008,
-			CONTENT_LOCATION = 0x00000010,
-			CONTENT_MD5 = 0x00000020,
-			CONTENT_RANGE = 0x00000020,
-			CONTENT_TYPE = 0x00000040,
-			EXPIRES = 0x00000080,
-			LAST_MODIFIED = 0x00000100
-		}sio_E_HttpEntityHeader;
+			ACCEPT_RANGES = 0x00000001,
+			AGE = 0x00000002,
+			ETAG = 0x00000004,
+			LOCATION = 0x00000008,
+			PROXY_AUTHORIZATION = 0x00000010,
+			RETRY_AFTER = 0x00000020,
+			SERVER = 0x00000040,
+			SET_COOKIE = 0x00000080,
+			VARY = 0x00000100,
+			WWW_AUTHENTICATION = 0x00000200,
+		}sio_E_HttpServerResponseHeader;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpEntityHeader
+		//        NAME: sio_C_HttpServerResponseHeader
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -2027,16 +1957,28 @@ namespace sio {
 		//      AUTHOR: SHERIFI
 		// AUTHOR/DATE: GMT Saturday, July 12, 2020
 		////////////////////////////////////////////////////////////////////////////////
-		typedef class sio_C_HttpEntityHeader : sio_S_HttpControlers {
+		typedef class sio_C_HttpServerResponseHeader : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
-			std::string sio_V_HttpEntityHeaderResult;
-			std::stringstream sio_SS_HttpEntityHeader;
+			std::string sio_V_HttpServerResponseHeaderResult;
+			std::stringstream sio_SS_HttpServerResponseHeader;
 		public:
-			sio_C_HttpEntityHeader() = delete;
-			sio_C_HttpEntityHeader(sio_E_HttpEntityHeader* sio_PE_HttpEntityHeader);
-			std::string sio_FN_GetHttpEntityHeader();
-		}sio_C_HttpEntityHeader;
+			sio_C_HttpServerResponseHeader() = delete;
+			sio_C_HttpServerResponseHeader(
+				sio_E_HttpServerResponseHeader* sio_PE_HttpServerResponseHeader,
+				sio_C_HttpServerResponseHeaderAcceptRanges* sio_PC_HttpServerResponseHeaderAcceptRanges,
+				sio_C_HttpServerResponseHeaderAge* sio_PC_HttpServerResponseHeaderAge,
+				sio_C_HttpServerResponseHeaderEtag* sio_PC_HttpServerResponseHeaderEtag,
+				sio_C_HttpServerResponseHeaderLocation* sio_PC_HttpServerResponseHeaderLocation,
+				sio_C_HttpServerResponseHeaderProxyAuthorization* sio_PC_HttpServerResponseHeaderProxyAuthorization,
+				sio_C_HttpServerResponseHeaderRetryAfter* sio_PC_HttpServerResponseHeaderRetryAfter,
+				sio_C_HttpServerResponseHeaderServer* sio_PC_HttpServerResponseHeaderServer,
+				sio_C_HttpServerResponseHeaderSetCookie* sio_PC_HttpServerResponseHeaderSetCookie,
+				sio_C_HttpServerResponseHeaderVary* sio_PC_HttpServerResponseHeaderVary,
+				sio_C_HttpServerResponseHeaderWwwAuthentication* sio_PC_HttpServerResponseHeaderWwwAuthentication
+			);
+			std::string sio_FN_GetHttpServerResponseHeader();
+		}sio_C_HttpServerResponseHeader;
 
 		////////////////////////////////////////////////////////////////////////////////
 		//        NAME: sio_E_HttpEntityHeaderAllow
@@ -2435,6 +2377,107 @@ namespace sio {
 			sio_C_HttpEntityHeaderLastModified(sio_E_HttpEntityHeaderLastModified* sio_PE_HttpEntityHeaderLastModified);
 			std::string sio_FN_GetHttpEntityHeaderLastModified();
 		}sio_C_HttpEntityHeaderLastModified;
+
+		////////////////////////////////////////////////////////////////////////////////
+		//        NAME: sio_E_HttpEntityHeader
+		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
+		//   ARGUMENTS: N/A
+		// USES GLOBAL: N/A
+		// MODIFIES GL: N/A
+		//     RETURNS: N/A
+		//      AUTHOR: SHERIFI
+		// AUTHOR/DATE: GMT Saturday, July 12, 2020
+		////////////////////////////////////////////////////////////////////////////////
+		typedef enum sio_E_HttpEntityHeader {
+			NONE = 0x00000000,
+			ALLOW = 0x00000001,
+			CONTENT_ENCODING = 0x00000002,
+			CONTENT_LANGUAGE = 0x00000004,
+			CONTENT_LENGTH = 0x00000008,
+			CONTENT_LOCATION = 0x00000010,
+			CONTENT_MD5 = 0x00000020,
+			CONTENT_RANGE = 0x00000020,
+			CONTENT_TYPE = 0x00000040,
+			EXPIRES = 0x00000080,
+			LAST_MODIFIED = 0x00000100
+		}sio_E_HttpEntityHeader;
+
+		////////////////////////////////////////////////////////////////////////////////
+		//        NAME: sio_C_HttpEntityHeader
+		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
+		//   ARGUMENTS: N/A
+		// USES GLOBAL: N/A
+		// MODIFIES GL: N/A
+		//     RETURNS: N/A
+		//      AUTHOR: SHERIFI
+		// AUTHOR/DATE: GMT Saturday, July 12, 2020
+		////////////////////////////////////////////////////////////////////////////////
+		typedef class sio_C_HttpEntityHeader : sio_S_HttpControlers {
+		private:
+			const char* sio_V_name;
+			std::string sio_V_HttpEntityHeaderResult;
+			std::stringstream sio_SS_HttpEntityHeader;
+		public:
+			sio_C_HttpEntityHeader() = delete;
+			sio_C_HttpEntityHeader(
+				sio_E_HttpEntityHeader* sio_PE_HttpEntityHeader,
+				sio_C_HttpEntityHeaderAllow* sio_PC_HttpEntityHeaderAllow,
+				sio_C_HttpEntityHeaderContentEncoding* sio_PC_HttpEntityHeaderContentEncoding,
+				sio_C_HttpEntityHeaderContentLanguage* sio_PC_HttpEntityHeaderContentLanguage,
+				sio_C_HttpEntityHeaderContentLength* sio_PC_HttpEntityHeaderContentLength,
+				sio_C_HttpEntityHeaderContentLocation* sio_PC_HttpEntityHeaderContentLocation,
+				sio_C_HttpEntityHeaderContentMd5* sio_PC_HttpEntityHeaderContentMd5,
+				sio_C_HttpEntityHeaderContentRange* sio_PC_HttpEntityHeaderContentRange,
+				sio_C_HttpEntityHeaderContentType* sio_PC_HttpEntityHeaderContentType,
+				sio_C_HttpEntityHeaderExpires* sio_PC_HttpEntityHeaderExpires,
+				sio_C_HttpEntityHeaderLastModified* sio_PC_HttpEntityHeaderLastModified
+			);
+			std::string sio_FN_GetHttpEntityHeader();
+		}sio_C_HttpEntityHeader;
+
+		////////////////////////////////////////////////////////////////////////////////
+		//        NAME: sio_E_HttpHeaderFields
+		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
+		//   ARGUMENTS: N/A
+		// USES GLOBAL: N/A
+		// MODIFIES GL: N/A
+		//     RETURNS: N/A
+		//      AUTHOR: SHERIFI
+		// AUTHOR/DATE: GMT Saturday, July 12, 2020
+		////////////////////////////////////////////////////////////////////////////////
+		typedef enum sio_E_HttpHeaderFields {
+			NONE = 0x00000000,
+			GENERAL_HEADER = 0x00000001,
+			CLIENT_REQUEST_HEADER = 0x00000002,
+			SERVER_RESPONSE_HEADER = 0x00000004,
+			ENTITY_HEADER = 0x00000008
+		}sio_E_HttpHeaderFields;
+
+		////////////////////////////////////////////////////////////////////////////////
+		//        NAME: sio_C_HttpHeaderFields
+		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
+		//   ARGUMENTS: N/A
+		// USES GLOBAL: N/A
+		// MODIFIES GL: N/A
+		//     RETURNS: N/A
+		//      AUTHOR: SHERIFI
+		// AUTHOR/DATE: GMT Saturday, July 12, 2020
+		////////////////////////////////////////////////////////////////////////////////
+		typedef class sio_C_HttpHeaderFields : sio_S_HttpControlers {
+		private:
+			const char* sio_V_name;
+			std::string sio_V_HttpHeaderFieldsResult;
+			std::stringstream sio_SS_HttpHeaderFields;
+		public:
+			sio_C_HttpHeaderFields() = delete;
+			std::string sio_FN_GetHttpHeaderFields(
+				sio_E_HttpHeaderFields* sio_PE_HttpHeaderFields,
+				sio_C_HttpGeneralHeader* sio_PC_HttpGeneralHeader,
+				sio_C_HttpClientRequestHeader* sio_PC_HttpClientRequestHeader,
+				sio_C_HttpServerResponseHeader* sio_PC_HttpServerResponseHeader,
+				sio_C_HttpEntityHeader* sio_PC_HttpEntityHeader
+			);
+		}sio_C_HttpHeaderFields;
 
 		/*
 		typedef void(sio_API_PTR* sio_PFN_WriteInfo)(sio_S_Info* sio_PS_Info);

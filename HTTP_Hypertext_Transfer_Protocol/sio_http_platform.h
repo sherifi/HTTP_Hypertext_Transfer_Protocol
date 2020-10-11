@@ -43,11 +43,11 @@
 //      AUTHOR: SHERIFI
 // AUTHOR/DATE: GMT Saturday, October 03,2020
 ////////////////////////////////////////////////////////////////////////////////
-#ifndef SIO_HTTP_PLATFORM_H_
-#define SIO_HTTP_PLATFORM_H_ 1
+#ifndef SIO_HTTP_PLATFROM_H_
+#define SIO_HTTP_PLATFROM_H_ 1
 
-#define sio_MAX_HTTP_PLATFORM_CHAR								64
-#define sio_MAX_HTTP_PLATFORM_INFO_CHAR							sio_MAX_HTTP_PLATFORM_CHAR
+#define sio_MAX_HTTP_PLATFROM_CHAR								64
+#define sio_MAX_HTTP_PLATFROM_INFO_CHAR							sio_MAX_HTTP_PLATFROM_CHAR
 
 #ifdef __cplusplus
 extern "C"
@@ -116,4 +116,4 @@ extern "C"
 } // extern "C"
 #endif // __cplusplus
 
-#endif // !SIO_HTTP_PLATFORM_H_
+#endif // !SIO_HTTP_PLATFROM_H_

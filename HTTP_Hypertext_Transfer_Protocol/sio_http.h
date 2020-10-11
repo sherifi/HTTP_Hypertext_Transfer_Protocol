@@ -170,7 +170,7 @@ typedef enum sio_Result {
 	sio_ERROR_FEATURE_NOT_PRESENT = -8,
 	sio_ERROR_INCOMPATIBLE_DRIVER = -9,
 	sio_ERROR_TOO_MANY_OBJECTS = -10,
-	sio_ERROR_FORMAT_NOT_SUPPORTED = -11,
+	sio_ERROR_FROMAT_NOT_SUPPORTED = -11,
 	sio_ERROR_FRAGMENTED_POOL = -12,
 	sio_ERROR_SURFACE_LOST_KHR = -1000000000,
 	sio_ERROR_NATIVE_WINDOW_IN_USE_KHR = -1000000001,
@@ -186,71 +186,71 @@ typedef enum sio_Result {
 } sio_Result;
 
 
-#ifdef sio_USE_PLATFORM_ANDROID_KHR
+#ifdef sio_USE_PLATFROM_ANDROID_KHR
 #include "vulkan_android.h"
 #endif
 
-#ifdef sio_USE_PLATFORM_FUCHSIA
+#ifdef sio_USE_PLATFROM_FUCHSIA
 #include <zircon/types.h>
 #include "vulkan_fuchsia.h"
 #endif
 
-#ifdef sio_USE_PLATFORM_IOS_MVK
+#ifdef sio_USE_PLATFROM_IOS_MVK
 #include "vulkan_ios.h"
 #endif
 
 
-#ifdef sio_USE_PLATFORM_MACOS_MVK
+#ifdef sio_USE_PLATFROM_MACOS_MVK
 #include "vulkan_macos.h"
 #endif
 
-#ifdef sio_USE_PLATFORM_METAL_EXT
+#ifdef sio_USE_PLATFROM_METAL_EXT
 #include "vulkan_metal.h"
 #endif
 
-#ifdef sio_USE_PLATFORM_VI_NN
+#ifdef sio_USE_PLATFROM_VI_NN
 #include "vulkan_vi.h"
 #endif
 
 
-#ifdef sio_USE_PLATFORM_WAYLAND_KHR
+#ifdef sio_USE_PLATFROM_WAYLAND_KHR
 #include <wayland-client.h>
 #include "vulkan_wayland.h"
 #endif
 
 
-#ifdef sio_USE_PLATFORM_WIN32_KHR
+#ifdef sio_USE_PLATFROM_WIN32_KHR
 #include <windows.h>
 #include "vulkan_win32.h"
 #endif
 
 
-#ifdef sio_USE_PLATFORM_XCB_KHR
+#ifdef sio_USE_PLATFROM_XCB_KHR
 #include <xcb/xcb.h>
 #include "vulkan_xcb.h"
 #endif
 
 
-#ifdef sio_USE_PLATFORM_XLIB_KHR
+#ifdef sio_USE_PLATFROM_XLIB_KHR
 #include <X11/Xlib.h>
 #include "vulkan_xlib.h"
 #endif
 
 
-#ifdef sio_USE_PLATFORM_DIRECTFB_EXT
+#ifdef sio_USE_PLATFROM_DIRECTFB_EXT
 #include <directfb.h>
 #include "vulkan_directfb.h"
 #endif
 
 
-#ifdef sio_USE_PLATFORM_XLIB_XRANDR_EXT
+#ifdef sio_USE_PLATFROM_XLIB_XRANDR_EXT
 #include <X11/Xlib.h>
 #include <X11/extensions/Xrandr.h>
 #include "vulkan_xlib_xrandr.h"
 #endif
 
 
-#ifdef sio_USE_PLATFORM_GGP
+#ifdef sio_USE_PLATFROM_GGP
 #include <ggp_c/vulkan_types.h>
 #include "vulkan_ggp.h"
 #endif

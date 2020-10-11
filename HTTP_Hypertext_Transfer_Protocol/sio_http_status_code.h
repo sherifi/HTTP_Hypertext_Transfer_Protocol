@@ -313,6 +313,55 @@ namespace sio {
 			std::string sio_FN_GetHttpStatusCodeServerError();
 		}sio_C_HttpStatusCodeServerError;
 
+		////////////////////////////////////////////////////////////////////////////////
+		//        NAME: sio_E_HttpStatusCode
+		// DESCRIPTION: This is the structure create to hold all the NAME related .
+		//   ARGUMENTS: N/A
+		// USES GLOBAL: N/A
+		// MODIFIES GL: N/A
+		//     RETURNS: N/A
+		//      AUTHOR: SHERIFI
+		// AUTHOR/DATE: GMT Saturday, Octomer 02, 2020
+		////////////////////////////////////////////////////////////////////////////////
+		typedef enum sio_E_HttpStatusCode {
+			NONE = 0X00000000,
+			INFORMATIONAL = 100,
+			SUCCESS = 200,
+			REDIRECTION = 300,
+			CLIENTERROR = 400,
+			SERVERERROR = 500,
+		}sio_E_HttpStatusCode;
+
+		////////////////////////////////////////////////////////////////////////////////
+		//        NAME: sio_C_HttpStatusCode
+		// DESCRIPTION: This is the structure create to hold all the NAME related .
+		//   ARGUMENTS: N/A
+		// USES GLOBAL: N/A
+		// MODIFIES GL: N/A
+		//     RETURNS: N/A
+		//      AUTHOR: SHERIFI
+		// AUTHOR/DATE: GMT Saturday, Octomer 02, 2020
+		////////////////////////////////////////////////////////////////////////////////
+		typedef class sio_C_HttpStatusCode : sio_S_HttpControlers {
+		private:
+			const char* sio_V_name;
+			uint8_t sio_V_HttpStatusCodeResultNum;
+			std::string sio_V_HttpStatusCodeResultStr;
+			std::string sio_V_HttpStatusCodeDescription;
+			std::stringstream sio_SS_HttpStatusCode;
+		public:
+			sio_C_HttpStatusCode() = delete;
+			sio_C_HttpStatusCode(
+				sio_E_HttpStatusCode* sio_PE_HttpStatusCode,
+				sio_C_HttpStatusCodeInformation* sio_PC_HttpStatusCodeInformation,
+				sio_C_HttpStatusCodeSuccessful* sio_PC_HttpStatusCodeSuccessful,
+				sio_C_HttpStatusCodeRedirection* sio_PC_HttpStatusCodeRedirection,
+				sio_C_HttpStatusCodeClientError* sio_PC_HttpStatusCodeClientError,
+				sio_C_HttpStatusCodeServerError* sio_C_HttpStatusCodeServerError
+			);
+			std::string sio_FN_GetHttpStatusCode();
+		}sio_C_HttpStatusCode;
+
 		/*
 		typedef void(sio_API_PTR* sio_PFN_WriteInfo)(sio_S_Info* sio_PS_Info);
 

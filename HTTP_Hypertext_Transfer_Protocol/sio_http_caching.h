@@ -112,7 +112,7 @@ namespace sio {
 			MAX_AGE_REQ = 0x00000004,
 			MAX_STALE_REQ = 0x00000008,
 			MIN_FRESH_REQ = 0x00000010,
-			NO_TRANSFORM_REQ = 0x00000020,
+			NO_TRANSFROM_REQ = 0x00000020,
 			ONLY_IF_CACHED_REQ = 0x00000040
 		}sio_E_HttpCachingRequestDirective;
 
@@ -130,7 +130,7 @@ namespace sio {
 				break;
 			case MIN_FRESH_REQ: return "Indicates that the client is willing to accept a response whose freshness lifetime is not less than its current age plus the specified time in seconds.";
 				break;
-			case NO_TRANSFORM_REQ: return "Does not convert the entity-body.";
+			case NO_TRANSFROM_REQ: return "Does not convert the entity-body.";
 				break;
 			case ONLY_IF_CACHED_REQ: return "Does not retrieve new data. The cache can send a document only if it is in the cache, and should not contact the origin-server to see if a newer copy exists.";
 				break;
@@ -176,7 +176,7 @@ namespace sio {
 			PRIVATE_RES = 0x00000002,
 			NO_CACHE_RES = 0x00000004,
 			NO_STORE_RES = 0x00000008,
-			NO_TRANSFORM_RES = 0x00000010,
+			NO_TRANSFROM_RES = 0x00000010,
 			MUST_REVALIDATE_RES = 0x00000020,
 			PROXY_REVALIDATE_RES = 0x00000040,
 			MAX_AGE_RES = 0x00000080,
@@ -195,7 +195,7 @@ namespace sio {
 				break;
 			case NO_STORE_RES: return "The cache should not store anything about the client request or server response.";
 				break;
-			case NO_TRANSFORM_RES: return "Does not convert the entity-body.";
+			case NO_TRANSFROM_RES: return "Does not convert the entity-body.";
 				break;
 			case MUST_REVALIDATE_RES: return "The cache must verify the status of the stale documents before using it and expired ones should not be used.";
 				break;

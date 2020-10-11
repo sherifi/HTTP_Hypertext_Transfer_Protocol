@@ -53,6 +53,8 @@
 #include "sio_http.h"
 #include "sio_http_methods.h"
 #include "sio_http_parameters.h"
+#include "sio_http_status_code.h"
+#include "sio_http_header_fields.h"
 
 namespace sio {
 	namespace httpMessage {
@@ -155,7 +157,9 @@ namespace sio {
 			sio_C_HttpMessageStartLineResponse() = delete;
 			sio_C_HttpMessageStartLineResponse(
 				const char* sio_V_HttpMessageStartLineResponseString,
-				sio_E_HttpMessageStartLineResponse* sio_PE_HttpMessageStartLineResponse
+				sio_E_HttpMessageStartLineResponse* sio_PE_HttpMessageStartLineResponse,
+				sio::httpParameters::sio_C_HttpVersion* sio_PC_HttpVersion,
+				sio::httpStatusCode::sio_C_HttpStatusCode* sio_PC_HttpStatusCode
 			);
 			std::string sio_FN_GetHttpMessageStartLineResponse();
 		}sio_C_HttpMessageStartLineResponse;
@@ -195,7 +199,9 @@ namespace sio {
 			sio_C_HttpMessageStartLine() = delete;
 			sio_C_HttpMessageStartLine(
 				const char* sio_V_HttpMessageStartLineString,
-				sio_E_HttpMessageStartLine* sio_PE_HttpMessageStartLine
+				sio_E_HttpMessageStartLine* sio_PE_HttpMessageStartLine,
+				sio_C_HttpMessageStartLineRequest* sio_PC_HttpMessageStartLineRequest,
+				sio_C_HttpMessageStartLineResponse* sio_C_HttpMessageStartLineResponse
 			);
 			std::string sio_FN_GetHttpMessage_StartLine();
 		}sio_C_HttpMessageStartLine;
@@ -232,7 +238,6 @@ namespace sio {
 		public:
 			sio_C_HttpMessageHeaderFieldsRequest() = delete;
 			sio_C_HttpMessageHeaderFieldsRequest(
-				const char* sio_V_HttpMessageHeaderFieldsRequestString,
 				sio_E_HttpMessageHeaderFieldsRequest* sio_PE_HttpMessageHeaderFieldsRequest
 			);
 			std::string sio_FN_GetHttpMessageHeaderFieldsRequest();
@@ -270,7 +275,6 @@ namespace sio {
 		public:
 			sio_C_HttpMessageHeaderFieldsResponse() = delete;
 			sio_C_HttpMessageHeaderFieldsResponse(
-				const char* sio_V_HttpMessageHeaderFieldsResponseString,
 				sio_E_HttpMessageHeaderFieldsResponse* sio_PE_HttpMessageHeaderFieldsResponse
 			);
 			std::string sio_FN_GetHttpMessageHeaderFieldsResponse();
@@ -310,8 +314,9 @@ namespace sio {
 		public:
 			sio_C_HttpMessageHeaderFields() = delete;
 			sio_C_HttpMessageHeaderFields(
-				const char* sio_V_HttpMessageHeaderFieldsString,
-				sio_E_HttpMessageHeaderFields* sio_PE_HttpMessageHeaderFields
+				sio_E_HttpMessageHeaderFields* sio_PE_HttpMessageHeaderFields,
+				sio_C_HttpMessageHeaderFieldsRequest* sio_PC_HttpMessageHeaderFieldsRequest,
+				sio_C_HttpMessageHeaderFieldsResponse* sio_C_HttpMessageHeaderFieldsResponse
 			);
 			std::string sio_FN_GetHttpMessage_HeaderFields();
 		}sio_C_HttpMessageHeaderFields;
@@ -426,8 +431,9 @@ namespace sio {
 		public:
 			sio_C_HttpMessageMessageBody() = delete;
 			sio_C_HttpMessageMessageBody(
-				const char* sio_V_HttpMessageMessageBodyString,
-				sio_E_HttpMessageMessageBody* sio_PE_HttpMessageMessageBody
+				sio_E_HttpMessageMessageBody* sio_PE_HttpMessageMessageBody,
+				sio_C_HttpMessageMessageBodyRequest* sio_PC_HttpMessageMessageBodyRequest,
+				sio_C_HttpMessageMessageBodyResponse* sio_C_HttpMessageMessageBodyResponse
 			);
 			std::string sio_FN_GetHttpMessage_MessageBody();
 		}sio_C_HttpMessageMessageBody;

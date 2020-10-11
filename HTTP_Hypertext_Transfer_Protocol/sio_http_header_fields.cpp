@@ -8,24 +8,31 @@ sio_C_HttpGeneralHeaderCacheControlRequestDirective::sio_C_HttpGeneralHeaderCach
 	sio_SS_HttpGeneralHeaderCacheControlRequestDirective << "Cache-control: ";
 	if (*sio_PE_HttpGeneralHeaderCacheControlRequestDirective == sio_E_HttpGeneralHeaderCacheControlRequestDirective::NO_CACHE_REQ) {
 		sio_SS_HttpGeneralHeaderCacheControlRequestDirective << "no-cache";
+		sio_V_HttpGeneralHeaderCacheControlRequestDirectiveDescription = "A cache must not use the response to satisfy a subsequent request without successful revalidation with the origin server.";
 	}
 	else if (*sio_PE_HttpGeneralHeaderCacheControlRequestDirective == sio_E_HttpGeneralHeaderCacheControlRequestDirective::NO_STORE_REQ) {
 		sio_SS_HttpGeneralHeaderCacheControlRequestDirective << "no-store";
+		sio_V_HttpGeneralHeaderCacheControlRequestDirectiveDescription = "The cache should not store anything about the client request or server response.";
 	}
 	else if (*sio_PE_HttpGeneralHeaderCacheControlRequestDirective == sio_E_HttpGeneralHeaderCacheControlRequestDirective::MAX_AGE_REQ) {
 		sio_SS_HttpGeneralHeaderCacheControlRequestDirective << "max-age=" << sec;
+		sio_V_HttpGeneralHeaderCacheControlRequestDirectiveDescription = "Indicates that the client is willing to accept a response whose age is not greater than the specified time in seconds.";
 	}
 	else if (*sio_PE_HttpGeneralHeaderCacheControlRequestDirective == sio_E_HttpGeneralHeaderCacheControlRequestDirective::MAX_STALE_REQ) {
 		sio_SS_HttpGeneralHeaderCacheControlRequestDirective << "max-stale[=" << sec << "]";
+		sio_V_HttpGeneralHeaderCacheControlRequestDirectiveDescription = "Indicates that the client is willing to accept a response that has exceeded its expiration time. If seconds are given, it must not be expired by more than that time.";
 	}
 	else if (*sio_PE_HttpGeneralHeaderCacheControlRequestDirective == sio_E_HttpGeneralHeaderCacheControlRequestDirective::MIN_FRESH_REQ) {
 		sio_SS_HttpGeneralHeaderCacheControlRequestDirective << "min-refresh=" << sec;
+		sio_V_HttpGeneralHeaderCacheControlRequestDirectiveDescription = "Indicates that the client is willing to accept a response whose freshness lifetime is not less than its current age plus the specified time in seconds.";
 	}
 	else if (*sio_PE_HttpGeneralHeaderCacheControlRequestDirective == sio_E_HttpGeneralHeaderCacheControlRequestDirective::NO_TRANSFORM_REQ) {
 		sio_SS_HttpGeneralHeaderCacheControlRequestDirective << "no-transform";
+		sio_V_HttpGeneralHeaderCacheControlRequestDirectiveDescription = "Does not convert the entity-body.";
 	}
 	else if (*sio_PE_HttpGeneralHeaderCacheControlRequestDirective == sio_E_HttpGeneralHeaderCacheControlRequestDirective::ONLY_IF_CACHED_REQ) {
 		sio_SS_HttpGeneralHeaderCacheControlRequestDirective << "only-if-cached";
+		sio_V_HttpGeneralHeaderCacheControlRequestDirectiveDescription = "Does not retrieve new data. The cache can send a document only if it is in the cache, and should not contact the origin-server to see if a newer copy exists.";
 	}
 	else {
 		assert("No Request cache directive providet");
@@ -39,35 +46,49 @@ std::string sio_C_HttpGeneralHeaderCacheControlRequestDirective::sio_FN_GetHttpG
 	return sio_V_HttpGeneralHeaderCacheControlRequestDirectiveResult;
 }
 
+std::string sio_C_HttpGeneralHeaderCacheControlRequestDirective::sio_FN_GetHttpGeneralHeaderCacheControlRequestDirectiveDescription()
+{
+	return sio_V_HttpGeneralHeaderCacheControlRequestDirectiveDescription;
+}
+
 sio_C_HttpGeneralHeaderCacheControlResponseDirective::sio_C_HttpGeneralHeaderCacheControlResponseDirective(sio_E_HttpGeneralHeaderCacheControlResponseDirective* sio_PE_HttpGeneralHeaderCacheControlResponseDirective, uint32_t sec)
 {
 	sio_SS_HttpGeneralHeaderCacheControlResponseDirective << "Cache-control: ";
 	if (*sio_PE_HttpGeneralHeaderCacheControlResponseDirective == sio_E_HttpGeneralHeaderCacheControlResponseDirective::PUBLIC_RES) {
 		sio_SS_HttpGeneralHeaderCacheControlResponseDirective << "public";
+		sio_V_HttpGeneralHeaderCacheControlResponseDirectiveDescription = "Indicates that the response may be cached by any cache.";
 	}
 	else if (*sio_PE_HttpGeneralHeaderCacheControlResponseDirective == sio_E_HttpGeneralHeaderCacheControlResponseDirective::PRIVATE_RES) {
 		sio_SS_HttpGeneralHeaderCacheControlResponseDirective << "private";
+		sio_V_HttpGeneralHeaderCacheControlResponseDirectiveDescription = "Indicates that all or part of the response message is intended for a single user and must not be cached by a shared cache.";
 	}
 	else if (*sio_PE_HttpGeneralHeaderCacheControlResponseDirective == sio_E_HttpGeneralHeaderCacheControlResponseDirective::NO_CACHE_RES) {
 		sio_SS_HttpGeneralHeaderCacheControlResponseDirective << "no-cache";
+		sio_V_HttpGeneralHeaderCacheControlResponseDirectiveDescription = "A cache must not use the response to satisfy a subsequent request without successful re-validation with the origin server.";
 	}
 	else if (*sio_PE_HttpGeneralHeaderCacheControlResponseDirective == sio_E_HttpGeneralHeaderCacheControlResponseDirective::NO_STORE_RES) {
 		sio_SS_HttpGeneralHeaderCacheControlResponseDirective << "no-store";
+		sio_V_HttpGeneralHeaderCacheControlResponseDirectiveDescription = "The cache should not store anything about the client request or server response.";
 	}
 	else if (*sio_PE_HttpGeneralHeaderCacheControlResponseDirective == sio_E_HttpGeneralHeaderCacheControlResponseDirective::NO_TRANSFORM_RES) {
 		sio_SS_HttpGeneralHeaderCacheControlResponseDirective << "no-transform";
+		sio_V_HttpGeneralHeaderCacheControlResponseDirectiveDescription = "Does not convert the entity-body.";
 	}
 	else if (*sio_PE_HttpGeneralHeaderCacheControlResponseDirective == sio_E_HttpGeneralHeaderCacheControlResponseDirective::MUST_REVALIDATE_RES) {
 		sio_SS_HttpGeneralHeaderCacheControlResponseDirective << "must-revalidate";
+		sio_V_HttpGeneralHeaderCacheControlResponseDirectiveDescription = "The cache must verify the status of the stale documents before using it and expired ones should not be used.";
 	}
 	else if (*sio_PE_HttpGeneralHeaderCacheControlResponseDirective == sio_E_HttpGeneralHeaderCacheControlResponseDirective::PROXY_REVALIDATE_RES) {
 		sio_SS_HttpGeneralHeaderCacheControlResponseDirective << "proxy-revalidate";
+		sio_V_HttpGeneralHeaderCacheControlResponseDirectiveDescription = "The proxy-revalidate directive has the same meaning as the must- revalidate directive, except that it does not apply to non-shared user agent caches.";
 	}
 	else if (*sio_PE_HttpGeneralHeaderCacheControlResponseDirective == sio_E_HttpGeneralHeaderCacheControlResponseDirective::MAX_AGE_RES) {
 		sio_SS_HttpGeneralHeaderCacheControlResponseDirective << "max-age=" << sec;
+		sio_V_HttpGeneralHeaderCacheControlResponseDirectiveDescription = "Indicates that the client is willing to accept a response whose age is not greater than the specified time in seconds.";
 	}
 	else if (*sio_PE_HttpGeneralHeaderCacheControlResponseDirective == sio_E_HttpGeneralHeaderCacheControlResponseDirective::S_MAXAGE_RES) {
 		sio_SS_HttpGeneralHeaderCacheControlResponseDirective << "s-maxage=" << sec;
+		sio_V_HttpGeneralHeaderCacheControlResponseDirectiveDescription = "The maximum age specified by this directive overrides the maximum age specified by either the max-age directive or the Expires header. The s-maxage directive is always ignored by a private cache.";
 	}
 	else {
 		assert("No Response cache directive providet");
@@ -79,6 +100,11 @@ sio_C_HttpGeneralHeaderCacheControlResponseDirective::sio_C_HttpGeneralHeaderCac
 std::string sio_C_HttpGeneralHeaderCacheControlResponseDirective::sio_FN_GetHttpGeneralHeaderCacheControlResponseDirective()
 {
 	return sio_V_HttpGeneralHeaderCacheControlResponseDirectiveResult;
+}
+
+std::string sio_C_HttpGeneralHeaderCacheControlResponseDirective::sio_FN_GetHttpGeneralHeaderCacheControlResponseDirectiveDescription()
+{
+	return sio_V_HttpGeneralHeaderCacheControlResponseDirectiveDescription;
 }
 
 sio_C_HttpGeneralHeaderConnection::sio_C_HttpGeneralHeaderConnection(sio_E_HttpGeneralHeaderConnection* sio_PE_HttpGeneralHeaderConnection)
