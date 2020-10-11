@@ -80,23 +80,7 @@ namespace sio {
 		}sio_S_HttpControlers;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpGeneralHeaderCacheControl
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
-		typedef enum sio_E_HttpGeneralHeaderCacheControl {
-			NONE = 0x00000000,
-			CACHE_REQUEST_DIRECTIVE = 0x00000001,
-			CACHE_RESPONSE_DIRECTIVE = 0x00000002
-		}sio_E_HttpGeneralHeaderCacheControl;
-
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpCachingRequestDirective
+		//        NAME: sio_C_HttpCachingRequestDirective
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -116,52 +100,23 @@ namespace sio {
 			ONLY_IF_CACHED_REQ = 0x00000040
 		}sio_E_HttpCachingRequestDirective;
 
-		inline const char* sio_FN_ToStringDiscription(sio_E_HttpCachingRequestDirective& sio_PE_HttpCachingRequestDirective) {
-			switch (sio_PE_HttpCachingRequestDirective) {
-			case NONE: return "NONE";
-				break;
-			case NO_CACHE_REQ: return "A cache must not use the response to satisfy a subsequent request without successful revalidation with the origin server.";
-				break;
-			case NO_STORE_REQ: return "The cache should not store anything about the client request or server response.";
-				break;
-			case MAX_AGE_REQ: return "Indicates that the client is willing to accept a response whose age is not greater than the specified time in seconds.";
-				break;
-			case MAX_STALE_REQ: return "Indicates that the client is willing to accept a response that has exceeded its expiration time. If seconds are given, it must not be expired by more than that time.";
-				break;
-			case MIN_FRESH_REQ: return "Indicates that the client is willing to accept a response whose freshness lifetime is not less than its current age plus the specified time in seconds.";
-				break;
-			case NO_TRANSFROM_REQ: return "Does not convert the entity-body.";
-				break;
-			case ONLY_IF_CACHED_REQ: return "Does not retrieve new data. The cache can send a document only if it is in the cache, and should not contact the origin-server to see if a newer copy exists.";
-				break;
-			default: "Unknowed";
-				break;
-			};
-		};
-
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpCachingRequestDirective
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpCachingRequestDirective : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
+			std::string sio_V_HttpCachingRequestDirectiveDescription;
 			std::string sio_V_HttpCachingRequestDirectiveResult;
 			std::stringstream sio_SS_HttpCachingRequestDirective;
 		public:
 			sio_C_HttpCachingRequestDirective() = delete;
-			sio_C_HttpCachingRequestDirective(sio_E_HttpCachingRequestDirective* sio_PE_HttpCachingRequestDirective, uint32_t sec);
+			sio_C_HttpCachingRequestDirective(
+				sio_E_HttpCachingRequestDirective* sio_PE_HttpCachingRequestDirective, 
+				uint32_t sec
+			);
 			std::string sio_FN_GetHttpCachingRequestDirective();
 		}sio_C_HttpCachingRequestDirective;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpCachingResponseDirective
+		//        NAME: sio_C_HttpCachingResponseDirective
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -183,67 +138,20 @@ namespace sio {
 			S_MAXAGE_RES = 0x00000100
 		}sio_E_HttpCachingResponseDirective;
 
-		inline const char* sio_FN_ToStringDiscription(sio_E_HttpCachingResponseDirective& sio_PE_HttpCachingResponseDirective) {
-			switch (sio_PE_HttpCachingResponseDirective) {
-			case NONE: return "NONE";
-				break;
-			case PUBLIC_RES: return "Indicates that the response may be cached by any cache.";
-				break;
-			case PRIVATE_RES: return "Indicates that all or part of the response message is intended for a single user and must not be cached by a shared cache.";
-				break;
-			case NO_CACHE_RES: return "A cache must not use the response to satisfy a subsequent request without successful re-validation with the origin server.";
-				break;
-			case NO_STORE_RES: return "The cache should not store anything about the client request or server response.";
-				break;
-			case NO_TRANSFROM_RES: return "Does not convert the entity-body.";
-				break;
-			case MUST_REVALIDATE_RES: return "The cache must verify the status of the stale documents before using it and expired ones should not be used.";
-				break;
-			case PROXY_REVALIDATE_RES: return "The proxy-revalidate directive has the same meaning as the must- revalidate directive, except that it does not apply to non-shared user agent caches.";
-				break;
-			case MAX_AGE_RES: return "Indicates that the client is willing to accept a response whose age is not greater than the specified time in seconds.";
-				break;
-			case S_MAXAGE_RES: return "The maximum age specified by this directive overrides the maximum age specified by either the max-age directive or the Expires header. The s-maxage directive is always ignored by a private cache.";
-				break;
-			default: "Unknowed";
-				break;
-			};
-		};
-
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpCachingResponseDirective
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpCachingResponseDirective : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
+			std::string sio_V_HttpCachingResponseDirectiveDescription;
 			std::string sio_V_HttpCachingResponseDirectiveResult;
 			std::stringstream sio_SS_HttpCachingResponseDirective;
 		public:
 			sio_C_HttpCachingResponseDirective() = delete;
-			sio_C_HttpCachingResponseDirective(sio_E_HttpCachingResponseDirective* sio_PE_HttpCachingResponseDirective, uint32_t sec);
+			sio_C_HttpCachingResponseDirective(
+				sio_E_HttpCachingResponseDirective* sio_PE_HttpCachingResponseDirective,
+				uint32_t sec
+			);
 			std::string sio_FN_GetHttpCachingResponseDirective();
 		}sio_C_HttpCachingResponseDirective;
-
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpCaching
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
-		typedef enum sio_E_HttpCaching {
-			NONE = 0x00000000,
-		}sio_E_HttpCaching;
 
 		////////////////////////////////////////////////////////////////////////////////
 		//        NAME: sio_C_HttpCaching
@@ -255,6 +163,12 @@ namespace sio {
 		//      AUTHOR: SHERIFI
 		// AUTHOR/DATE: GMT Saturday, July 12, 2020
 		////////////////////////////////////////////////////////////////////////////////
+		typedef enum sio_E_HttpCaching {
+			NONE = 0x00000000,
+			CACHE_REQUEST_DIRECTIVE = 0x00000001,
+			CACHE_RESPONSE_DIRECTIVE = 0x00000002,
+		}sio_E_HttpCaching;
+
 		typedef class sio_C_HttpCaching : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -263,7 +177,11 @@ namespace sio {
 		public:
 			sio_C_HttpCaching() = default;
 			void sio_FN_SetHttpCaching();
-			std::string sio_FN_GetHttpCaching(sio_E_HttpCaching* sio_PE_HttpCaching);
+			std::string sio_FN_GetHttpCaching(
+				sio_E_HttpCaching* sio_PE_HttpCaching,
+				sio_C_HttpCachingRequestDirective* sio_PC_HttpCachingRequestDirective,
+				sio_C_HttpCachingResponseDirective* sio_PC_HttpCachingResponseDirective
+				);
 		}sio_C_HttpCaching;
 
 		/*

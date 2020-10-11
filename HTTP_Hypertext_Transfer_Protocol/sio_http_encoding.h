@@ -82,7 +82,7 @@ namespace sio {
 		}sio_S_HttpControlers;
 		
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpEncoding
+		//        NAME: sio_C_HttpEncoding
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -95,16 +95,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpEncoding;
 		
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpEncoding
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpEncoding : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;

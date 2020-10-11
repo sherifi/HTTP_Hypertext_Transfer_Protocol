@@ -78,7 +78,7 @@ namespace sio {
 		}sio_S_HttpControlers;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpStatusCodeInformation
+		//        NAME: sio_C_HttpStatusCodeInformation
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -93,16 +93,6 @@ namespace sio {
 			SWITCHING_PROTOCOLS = 101
 		}sio_E_HttpStatusCodeInformation;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpStatusCodeInformation
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, Octomer 02, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpStatusCodeInformation : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -119,7 +109,7 @@ namespace sio {
 		}sio_C_HttpStatusCodeInformation;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpStatusCodeSuccessful
+		//        NAME: sio_C_HttpStatusCodeSuccessful
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -139,16 +129,6 @@ namespace sio {
 			PARTIAL_CONTENT = 206
 		}sio_E_HttpStatusCodeSuccessful;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpStatusCodeSuccessful
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, Octomer 02, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpStatusCodeSuccessful : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -165,7 +145,7 @@ namespace sio {
 		}sio_C_HttpStatusCodeSuccessful;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpStatusCodeRedirection
+		//        NAME: sio_C_HttpStatusCodeRedirection
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -186,16 +166,6 @@ namespace sio {
 			TEMPORARY_REDIRECT = 307
 		}sio_E_HttpStatusCodeRedirection;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpStatusCodeRedirection
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, Octomer 02, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpStatusCodeRedirection : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -212,7 +182,7 @@ namespace sio {
 		}sio_C_HttpStatusCodeRedirection;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpStatusCodeClientError
+		//        NAME: sio_C_HttpStatusCodeClientError
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -243,16 +213,6 @@ namespace sio {
 			EXPECTATION_FAILED = 417
 		}sio_E_HttpStatusCodeClientError;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpStatusCodeClientError
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, Octomer 02, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpStatusCodeClientError : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -269,7 +229,7 @@ namespace sio {
 		}sio_C_HttpStatusCodeClientError;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpStatusCodeServerError
+		//        NAME: sio_C_HttpStatusCodeServerError
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -288,16 +248,6 @@ namespace sio {
 			HTTP_VERSION_NOT_SUPPORTED = 505
 		}sio_E_HttpStatusCodeServerError;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpStatusCodeServerError
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, Octomer 02, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpStatusCodeServerError : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -314,7 +264,7 @@ namespace sio {
 		}sio_C_HttpStatusCodeServerError;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpStatusCode
+		//        NAME: sio_C_HttpStatusCode
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -332,16 +282,6 @@ namespace sio {
 			SERVERERROR = 500,
 		}sio_E_HttpStatusCode;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpStatusCode
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, Octomer 02, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpStatusCode : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;

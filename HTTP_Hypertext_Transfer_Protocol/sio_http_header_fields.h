@@ -82,7 +82,7 @@ namespace sio {
 		}sio_S_HttpControlers;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpGeneralHeaderCacheControlRequestDirective
+		//        NAME: sio_C_HttpGeneralHeaderCacheControlRequestDirective
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -102,16 +102,6 @@ namespace sio {
 			ONLY_IF_CACHED_REQ = 0x00000040
 		}sio_E_HttpGeneralHeaderCacheControlRequestDirective;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpGeneralHeaderCacheControlRequestDirective
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpGeneralHeaderCacheControlRequestDirective : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -126,7 +116,7 @@ namespace sio {
 		}sio_C_HttpGeneralHeaderCacheControlRequestDirective;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpGeneralHeaderCacheControlResponseDirective
+		//        NAME: sio_C_HttpGeneralHeaderCacheControlResponseDirective
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -148,16 +138,6 @@ namespace sio {
 			S_MAXAGE_RES = 0x00000100
 		}sio_E_HttpGeneralHeaderCacheControlResponseDirective;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpGeneralHeaderCacheControlResponseDirective
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpGeneralHeaderCacheControlResponseDirective : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -172,7 +152,7 @@ namespace sio {
 		}sio_C_HttpGeneralHeaderCacheControlResponseDirective;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpGeneralHeaderCacheControl
+		//        NAME: sio_C_HttpGeneralHeaderCacheControl
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -187,16 +167,6 @@ namespace sio {
 			CACHE_RESPONSE_DIRECTIVE = 0x00000002
 		}sio_E_HttpGeneralHeaderCacheControl;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpGeneralHeaderCacheControl
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpGeneralHeaderCacheControl : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -213,7 +183,7 @@ namespace sio {
 		}sio_C_HttpGeneralHeaderCacheControl;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpGeneralHeaderConnection
+		//        NAME: sio_C_HttpGeneralHeaderConnection
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -228,16 +198,6 @@ namespace sio {
 			KEEP_ALIVE = 0x00000002
 		}sio_E_HttpGeneralHeaderConnection;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpGeneralHeaderConnection
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpGeneralHeaderConnection : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -250,7 +210,7 @@ namespace sio {
 		}sio_C_HttpGeneralHeaderConnection;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpGeneralHeaderDate
+		//        NAME: sio_C_HttpGeneralHeaderDate
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -267,16 +227,6 @@ namespace sio {
 
 		}sio_E_HttpGeneralHeaderDate;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpGeneralHeaderDate
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpGeneralHeaderDate : sio_S_HttpControlers {
 		private:
 			time_t now;
@@ -290,7 +240,7 @@ namespace sio {
 		}sio_C_HttpGeneralHeaderDate;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpGeneralHeaderPragma
+		//        NAME: sio_C_HttpGeneralHeaderPragma
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -303,16 +253,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpGeneralHeaderPragma;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpGeneralHeaderPragma
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpGeneralHeaderPragma : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -332,7 +272,7 @@ namespace sio {
 		}sio_C_HttpGeneralHeaderPragma;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpGeneralHeaderTrailer
+		//        NAME: sio_C_HttpGeneralHeaderTrailer
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -345,16 +285,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpGeneralHeaderTrailer;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpGeneralHeaderTrailer
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpGeneralHeaderTrailer : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -367,7 +297,7 @@ namespace sio {
 		}sio_C_HttpGeneralHeaderTrailer;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpGeneralHeaderTransferEncoding
+		//        NAME: sio_C_HttpGeneralHeaderTransferEncoding
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -381,16 +311,6 @@ namespace sio {
 			CHUNKED = 0x00000001,
 		}sio_E_HttpGeneralHeaderTransferEncoding;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpGeneralHeaderTransferEncoding
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpGeneralHeaderTransferEncoding : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -403,7 +323,7 @@ namespace sio {
 		}sio_C_HttpGeneralHeaderTransferEncoding;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpGeneralHeaderUpgrade
+		//        NAME: sio_C_HttpGeneralHeaderUpgrade
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -420,16 +340,6 @@ namespace sio {
 			RTA_X11 = 0x00000008,
 		}sio_E_HttpGeneralHeaderUpgrade;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpGeneralHeaderUpgrade
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpGeneralHeaderUpgrade : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -442,7 +352,7 @@ namespace sio {
 		}sio_C_HttpGeneralHeaderUpgrade;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpGeneralHeaderVia
+		//        NAME: sio_C_HttpGeneralHeaderVia
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -455,16 +365,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpGeneralHeaderVia;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpGeneralHeaderVia
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpGeneralHeaderVia : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -484,7 +384,7 @@ namespace sio {
 		}sio_C_HttpGeneralHeaderVia;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpGeneralHeaderWarning
+		//        NAME: sio_C_HttpGeneralHeaderWarning
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -497,16 +397,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpGeneralHeaderWarning;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpGeneralHeaderWarning
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpGeneralHeaderWarning : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -525,7 +415,7 @@ namespace sio {
 		}sio_C_HttpGeneralHeaderWarning;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpGeneralHeader
+		//        NAME: sio_C_HttpGeneralHeader
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -547,16 +437,6 @@ namespace sio {
 			WARNING = 0x00000100
 		}sio_E_HttpGeneralHeader;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpGeneralHeader
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpGeneralHeader : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -580,7 +460,7 @@ namespace sio {
 		}sio_C_HttpGeneralHeader;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderAccept
+		//        NAME: sio_C_HttpClientRequestHeaderAccept
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -593,16 +473,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpClientRequestHeaderAccept;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderAccept
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderAccept : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -626,7 +496,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderAccept;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderAcceptCharset
+		//        NAME: sio_C_HttpClientRequestHeaderAcceptCharset
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -641,16 +511,6 @@ namespace sio {
 			UNICODE_1_1 = 0x00000002,
 		}sio_E_HttpClientRequestHeaderAcceptCharset;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderAcceptCharset
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderAcceptCharset : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -667,7 +527,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderAcceptCharset;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderAcceptEncoding
+		//        NAME: sio_C_HttpClientRequestHeaderAcceptEncoding
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -684,16 +544,6 @@ namespace sio {
 			ALL = 0x00000008,
 		}sio_E_HttpClientRequestHeaderAcceptEncoding;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderAcceptEncoding
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderAcceptEncoding : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -713,7 +563,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderAcceptEncoding;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderAcceptLanguage
+		//        NAME: sio_C_HttpClientRequestHeaderAcceptLanguage
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -730,16 +580,6 @@ namespace sio {
 			DA = 0x00000008,
 		}sio_E_HttpClientRequestHeaderAcceptLanguage;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderAcceptLanguage
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderAcceptLanguage : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -759,7 +599,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderAcceptLanguage;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderAuthorization
+		//        NAME: sio_C_HttpClientRequestHeaderAuthorization
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -772,16 +612,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpClientRequestHeaderAuthorization;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderAuthorization
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderAuthorization : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -799,7 +629,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderAuthorization;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderCookie
+		//        NAME: sio_C_HttpClientRequestHeaderCookie
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -812,16 +642,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpClientRequestHeaderCookie;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderCookie
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderCookie : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -843,7 +663,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderCookie;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderExpect
+		//        NAME: sio_C_HttpClientRequestHeaderExpect
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -856,16 +676,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpClientRequestHeaderExpect;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderExpect
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderExpect : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -878,7 +688,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderExpect;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderFrom
+		//        NAME: sio_C_HttpClientRequestHeaderFrom
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -891,16 +701,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpClientRequestHeaderFrom;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderFrom
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderFrom : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -916,7 +716,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderFrom;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderHost
+		//        NAME: sio_C_HttpClientRequestHeaderHost
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -929,16 +729,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpClientRequestHeaderHost;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderHost
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderHost : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -955,7 +745,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderHost;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderIfMatch
+		//        NAME: sio_C_HttpClientRequestHeaderIfMatch
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -968,16 +758,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpClientRequestHeaderIfMatch;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderIfMatch
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderIfMatch : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -997,7 +777,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderIfMatch;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderIfModifiedSince
+		//        NAME: sio_C_HttpClientRequestHeaderIfModifiedSince
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1013,16 +793,6 @@ namespace sio {
 			ANSI = 0x00000004,
 		}sio_E_HttpClientRequestHeaderIfModifiedSince;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderIfModifiedSince
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderIfModifiedSince : sio_S_HttpControlers {
 		private:
 			time_t now;
@@ -1036,7 +806,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderIfModifiedSince;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderIfNotMatch
+		//        NAME: sio_C_HttpClientRequestHeaderIfNotMatch
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1049,16 +819,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpClientRequestHeaderIfNotMatch;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderIfNotMatch
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderIfNotMatch : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -1073,7 +833,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderIfNotMatch;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderIfRange
+		//        NAME: sio_C_HttpClientRequestHeaderIfRange
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1088,16 +848,6 @@ namespace sio {
 			ENTITY_TAG = 0x00000002,
 		}sio_E_HttpClientRequestHeaderIfRange;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderIfRangeDateType
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef enum sio_E_HttpClientRequestHeaderIfRangeDateType {
 			NONE = 0x00000000,
 			RFC822 = 0x00000001,
@@ -1105,16 +855,6 @@ namespace sio {
 			ANSI = 0x00000004,
 		}sio_E_HttpClientRequestHeaderIfRangeDateType;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderIfRange
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderIfRange : sio_S_HttpControlers {
 		private:
 			time_t now;
@@ -1132,7 +872,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderIfRange;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderIfUnmodifiedSince
+		//        NAME: sio_C_HttpClientRequestHeaderIfUnmodifiedSince
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1148,16 +888,6 @@ namespace sio {
 			ANSI = 0x00000004,
 		}sio_E_HttpClientRequestHeaderIfUnmodifiedSince;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderIfUnmodifiedSince
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderIfUnmodifiedSince : sio_S_HttpControlers {
 		private:
 			time_t now;
@@ -1171,7 +901,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderIfUnmodifiedSince;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderMaxForwards
+		//        NAME: sio_C_HttpClientRequestHeaderMaxForwards
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1184,16 +914,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpClientRequestHeaderMaxForwards;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderMaxForwards
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderMaxForwards : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -1208,7 +928,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderMaxForwards;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderProxyAuthorization
+		//        NAME: sio_C_HttpClientRequestHeaderProxyAuthorization
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1221,16 +941,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpClientRequestHeaderProxyAuthorization;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderProxyAuthorization
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderProxyAuthorization : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -1246,7 +956,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderProxyAuthorization;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderRange
+		//        NAME: sio_C_HttpClientRequestHeaderRange
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1259,16 +969,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpClientRequestHeaderRange;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderRange
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderRange : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -1284,7 +984,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderRange;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderRefere
+		//        NAME: sio_C_HttpClientRequestHeaderRefere
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1299,16 +999,6 @@ namespace sio {
 			RELATIVE_URL = 0x00000002,
 		}sio_E_HttpClientRequestHeaderRefere;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderRefere
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderRefere : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -1324,7 +1014,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderRefere;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderTe
+		//        NAME: sio_C_HttpClientRequestHeaderTe
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1339,16 +1029,6 @@ namespace sio {
 			TRAILERS = 0x00000002,
 		}sio_E_HttpClientRequestHeaderTe;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderTe
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderTe : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -1365,7 +1045,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderTe;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeaderUserAgent
+		//        NAME: sio_C_HttpClientRequestHeaderUserAgent
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1378,16 +1058,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpClientRequestHeaderUserAgent;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeaderUserAgent
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeaderUserAgent : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -1404,7 +1074,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeaderUserAgent;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpClientRequestHeader
+		//        NAME: sio_C_HttpClientRequestHeader
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1437,16 +1107,6 @@ namespace sio {
 			USER_AGENT = 0x00020000
 		}sio_E_HttpClientRequestHeader;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpClientRequestHeader
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpClientRequestHeader : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -1481,7 +1141,7 @@ namespace sio {
 		}sio_C_HttpClientRequestHeader;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpServerResponseHeaderAcceptRanges
+		//        NAME: sio_C_HttpServerResponseHeaderAcceptRanges
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1495,16 +1155,6 @@ namespace sio {
 			BYTE = 0x00000001,
 		}sio_E_HttpServerResponseHeaderAcceptRanges;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpServerResponseHeaderAcceptRanges
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpServerResponseHeaderAcceptRanges : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -1519,7 +1169,7 @@ namespace sio {
 		}sio_C_HttpServerResponseHeaderAcceptRanges;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpServerResponseHeaderAge
+		//        NAME: sio_C_HttpServerResponseHeaderAge
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1532,16 +1182,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpServerResponseHeaderAge;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpServerResponseHeaderAge
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpServerResponseHeaderAge : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -1557,7 +1197,7 @@ namespace sio {
 		}sio_C_HttpServerResponseHeaderAge;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpServerResponseHeaderEtag
+		//        NAME: sio_C_HttpServerResponseHeaderEtag
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1570,16 +1210,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpServerResponseHeaderEtag;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpServerResponseHeaderEtag
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpServerResponseHeaderEtag : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -1595,7 +1225,7 @@ namespace sio {
 		}sio_C_HttpServerResponseHeaderEtag;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpServerResponseHeaderLocation
+		//        NAME: sio_C_HttpServerResponseHeaderLocation
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1608,16 +1238,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpServerResponseHeaderLocation;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpServerResponseHeaderLocation
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpServerResponseHeaderLocation : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -1633,7 +1253,7 @@ namespace sio {
 		}sio_C_HttpServerResponseHeaderLocation;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpServerResponseHeaderProxyAuthorization
+		//        NAME: sio_C_HttpServerResponseHeaderProxyAuthorization
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1646,16 +1266,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpServerResponseHeaderProxyAuthorization;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpServerResponseHeaderProxyAuthorization
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpServerResponseHeaderProxyAuthorization : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -1670,7 +1280,7 @@ namespace sio {
 		}sio_C_HttpServerResponseHeaderProxyAuthorization;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpServerResponseHeaderRetryAfter
+		//        NAME: sio_C_HttpServerResponseHeaderRetryAfter
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1685,16 +1295,6 @@ namespace sio {
 			DELTA_SECONDS = 0x00000002,
 		}sio_E_HttpServerResponseHeaderRetryAfter;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpServerResponseHeaderRetryAfterHttpDate
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef enum sio_E_HttpServerResponseHeaderRetryAfterHttpDate {
 			NONE = 0x00000000,
 			RFC822 = 0x00000001,
@@ -1702,16 +1302,6 @@ namespace sio {
 			ANSI = 0x00000004,
 		}sio_E_HttpServerResponseHeaderRetryAfterHttpDate;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpServerResponseHeaderRetryAfter
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpServerResponseHeaderRetryAfter : sio_S_HttpControlers {
 		private:
 			time_t now;
@@ -1729,7 +1319,7 @@ namespace sio {
 		}sio_C_HttpServerResponseHeaderRetryAfter;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpServerResponseHeaderServer
+		//        NAME: sio_C_HttpServerResponseHeaderServer
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1742,16 +1332,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpServerResponseHeaderServer;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpServerResponseHeaderServer
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpServerResponseHeaderServer : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -1768,7 +1348,7 @@ namespace sio {
 		}sio_C_HttpServerResponseHeaderServer;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpServerResponseHeaderSetCookie
+		//        NAME: sio_C_HttpServerResponseHeaderSetCookie
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1781,16 +1361,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpServerResponseHeaderSetCookie;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpServerResponseHeaderSetCookieOptions
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef enum sio_E_HttpServerResponseHeaderSetCookieOptions {
 			NONE = 0x00000000,
 			COMMENT = 0x00000001,
@@ -1800,16 +1370,6 @@ namespace sio {
 			SECURE = 0x00000010,
 		}sio_E_HttpServerResponseHeaderSetCookieOptions;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpServerResponseHeaderSetCookie
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpServerResponseHeaderSetCookie : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -1839,7 +1399,7 @@ namespace sio {
 		}sio_C_HttpServerResponseHeaderSetCookie;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpServerResponseHeaderVary
+		//        NAME: sio_C_HttpServerResponseHeaderVary
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1852,16 +1412,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpServerResponseHeaderVary;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpServerResponseHeaderVary
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpServerResponseHeaderVary : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -1881,7 +1431,7 @@ namespace sio {
 		}sio_C_HttpServerResponseHeaderVary;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpServerResponseHeaderWwwAuthentication
+		//        NAME: sio_C_HttpServerResponseHeaderWwwAuthentication
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1895,16 +1445,6 @@ namespace sio {
 			BASIC = 0x00000001,
 		}sio_E_HttpServerResponseHeaderWwwAuthentication;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpServerResponseHeaderWwwAuthentication
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpServerResponseHeaderWwwAuthentication : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -1924,7 +1464,7 @@ namespace sio {
 		}sio_C_HttpServerResponseHeaderWwwAuthentication;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpServerResponseHeader
+		//        NAME: sio_C_HttpServerResponseHeader
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -1947,16 +1487,6 @@ namespace sio {
 			WWW_AUTHENTICATION = 0x00000200,
 		}sio_E_HttpServerResponseHeader;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpServerResponseHeader
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpServerResponseHeader : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -1981,7 +1511,7 @@ namespace sio {
 		}sio_C_HttpServerResponseHeader;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpEntityHeaderAllow
+		//        NAME: sio_C_HttpEntityHeaderAllow
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -2002,16 +1532,6 @@ namespace sio {
 			TRACE = 0x00000080,
 		}sio_E_HttpEntityHeaderAllow;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpEntityHeaderAllow
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpEntityHeaderAllow : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -2025,7 +1545,7 @@ namespace sio {
 		}sio_C_HttpEntityHeaderAllow;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpEntityHeaderContentEncoding
+		//        NAME: sio_C_HttpEntityHeaderContentEncoding
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -2042,16 +1562,6 @@ namespace sio {
 			ALL = 0x00000008,
 		}sio_E_HttpEntityHeaderContentEncoding;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpEntityHeaderContentEncoding
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpEntityHeaderContentEncoding : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -2065,7 +1575,7 @@ namespace sio {
 		}sio_C_HttpEntityHeaderContentEncoding;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpEntityHeaderContentLanguage
+		//        NAME: sio_C_HttpEntityHeaderContentLanguage
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -2082,16 +1592,6 @@ namespace sio {
 			DA = 0x00000008,
 		}sio_E_HttpEntityHeaderContentLanguage;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpEntityHeaderContentLanguage
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpEntityHeaderContentLanguage : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -2105,7 +1605,7 @@ namespace sio {
 		}sio_C_HttpEntityHeaderContentLanguage;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpEntityHeaderContentLength
+		//        NAME: sio_C_HttpEntityHeaderContentLength
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -2118,16 +1618,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpEntityHeaderContentLength;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpEntityHeaderContentLength
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpEntityHeaderContentLength : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -2143,7 +1633,7 @@ namespace sio {
 		}sio_C_HttpEntityHeaderContentLength;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpEntityHeaderContentLocation
+		//        NAME: sio_C_HttpEntityHeaderContentLocation
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -2158,16 +1648,6 @@ namespace sio {
 			RELATIVE_URI = 0x00000002,
 		}sio_E_HttpEntityHeaderContentLocation;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpEntityHeaderContentLocation
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpEntityHeaderContentLocation : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -2183,7 +1663,7 @@ namespace sio {
 		}sio_C_HttpEntityHeaderContentLocation;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpEntityHeaderContentMd5
+		//        NAME: sio_C_HttpEntityHeaderContentMd5
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -2196,16 +1676,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpEntityHeaderContentMd5;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpEntityHeaderContentMd5
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpEntityHeaderContentMd5 : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -2218,7 +1688,7 @@ namespace sio {
 		}sio_C_HttpEntityHeaderContentMd5;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpEntityHeaderContentRange
+		//        NAME: sio_C_HttpEntityHeaderContentRange
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -2231,16 +1701,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpEntityHeaderContentRange;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpEntityHeaderContentRange
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpEntityHeaderContentRange : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -2257,7 +1717,7 @@ namespace sio {
 		}sio_C_HttpEntityHeaderContentRange;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpEntityHeaderContentType
+		//        NAME: sio_C_HttpEntityHeaderContentType
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -2274,16 +1734,6 @@ namespace sio {
 			TEXT_XC = 0x00000008,
 		}sio_E_HttpEntityHeaderContentType;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpEntityHeaderContentType
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpEntityHeaderContentType : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -2301,7 +1751,7 @@ namespace sio {
 		}sio_C_HttpEntityHeaderContentType;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpEntityHeaderExpires
+		//        NAME: sio_C_HttpEntityHeaderExpires
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -2317,16 +1767,6 @@ namespace sio {
 			ANSI = 0x00000004,
 		}sio_E_HttpEntityHeaderExpires;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpEntityHeaderExpires
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpEntityHeaderExpires : sio_S_HttpControlers {
 		private:
 			time_t now;
@@ -2340,7 +1780,7 @@ namespace sio {
 		}sio_C_HttpEntityHeaderExpires;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpEntityHeaderLastModified
+		//        NAME: sio_C_HttpEntityHeaderLastModified
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -2356,16 +1796,6 @@ namespace sio {
 			ANSI = 0x00000004,
 		}sio_E_HttpEntityHeaderLastModified;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpEntityHeaderLastModified
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpEntityHeaderLastModified : sio_S_HttpControlers {
 		private:
 			time_t now;
@@ -2379,7 +1809,7 @@ namespace sio {
 		}sio_C_HttpEntityHeaderLastModified;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpEntityHeader
+		//        NAME: sio_C_HttpEntityHeader
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -2402,16 +1832,6 @@ namespace sio {
 			LAST_MODIFIED = 0x00000100
 		}sio_E_HttpEntityHeader;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpEntityHeader
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpEntityHeader : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -2436,7 +1856,7 @@ namespace sio {
 		}sio_C_HttpEntityHeader;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpHeaderFields
+		//        NAME: sio_C_HttpHeaderFields
 		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -2453,16 +1873,6 @@ namespace sio {
 			ENTITY_HEADER = 0x00000008
 		}sio_E_HttpHeaderFields;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpHeaderFields
-		// DESCRIPTION: This is the root of HTTPHypertextTransferProtocol HEADER FIELDS
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpHeaderFields : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;

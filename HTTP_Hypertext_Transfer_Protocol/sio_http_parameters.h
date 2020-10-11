@@ -81,7 +81,7 @@ namespace sio {
 		}sio_S_HttpControlers;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpVersion
+		//        NAME: sio_C_HttpVersion
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -94,16 +94,7 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpVersion;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpVersion
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
+		//////////////////////////////////l//////////////////////////////////////////
 		typedef class sio_C_HttpVersion : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -122,7 +113,7 @@ namespace sio {
 		}sio_C_HttpVersion;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpUniformResourceIdentifier
+		//        NAME: sio_C_HttpUniformResourceIdentifier
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -135,16 +126,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpUniformResourceIdentifier;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpUniformResourceIdentifier
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpUniformResourceIdentifier : sio_S_HttpControlers {
 		private:
 			const char* sio_V_protocolName;
@@ -167,7 +148,7 @@ namespace sio {
 		}sio_C_HttpUniformResourceIdentifier;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpDateTimeFormat
+		//        NAME: sio_C_HttpDateTimeFormat
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -183,16 +164,6 @@ namespace sio {
 			ANSI =								0x00000004
 		}sio_E_HttpDateTimeFormat;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpDateTimeFormat
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpDateTimeFormat : sio_S_HttpControlers {
 		private:
 			time_t now;
@@ -205,7 +176,7 @@ namespace sio {
 		}sio_C_HttpDateTimeFormat;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpCharacterSets
+		//        NAME: sio_C_HttpCharacterSets
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -221,16 +192,6 @@ namespace sio {
 			ISO_8859_7 =						0x00000004
 		}sio_E_HttpCharacterSets;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpCharacterSets
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpCharacterSets : sio_S_HttpControlers {
 		private:
 			std::string sio_V_HttpCharacterSetsResult;
@@ -242,7 +203,7 @@ namespace sio {
 		}sio_C_HttpCharacterSets;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpContentEncodings
+		//        NAME: sio_C_HttpContentEncodings
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -258,16 +219,6 @@ namespace sio {
 			DEFLATE =							0x00000004
 		}sio_E_HttpContentEncodings;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpContentEncodings
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpContentEncodings : sio_S_HttpControlers {
 		private:
 			std::string sio_V_HttpContentEncodingsResult;
@@ -279,7 +230,7 @@ namespace sio {
 		}sio_C_HttpContentEncodings;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpMediaType
+		//        NAME: sio_C_HttpMediaType
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -294,16 +245,6 @@ namespace sio {
 			ACCEPT =							0x00000002,
 		}sio_E_HttpMediaType;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpMediaType
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpMediaType : sio_S_HttpControlers {
 		private:
 			const char* sio_V_mediaType;
@@ -323,7 +264,7 @@ namespace sio {
 		}sio_C_HttpMediaType;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpLanguageTags
+		//        NAME: sio_C_HttpLanguageTags
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -338,16 +279,6 @@ namespace sio {
 			CONTENT_LANGUAGE=				0x00000002,
 		}sio_E_HttpLanguageTags;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpLanguageTags
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpLanguageTags : sio_S_HttpControlers {
 		private:
 			const char* sio_V_primaryTag;
@@ -365,7 +296,7 @@ namespace sio {
 		}sio_C_HttpLanguageTags;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpParameters
+		//        NAME: sio_C_HttpParameters
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -385,16 +316,6 @@ namespace sio {
 			LANGUAGE_TAGS = 0x00000040,
 		}sio_E_HttpParameters;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpParameters
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpParameters : sio_S_HttpControlers {
 		private:
 			std::string sio_V_HttpParametersResult;

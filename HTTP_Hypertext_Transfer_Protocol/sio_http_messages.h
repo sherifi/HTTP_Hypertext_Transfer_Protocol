@@ -84,7 +84,7 @@ namespace sio {
 		}sio_S_HttpControlers;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpMessageStartLineRequest
+		//        NAME: sio_C_HttpMessageStartLineRequest
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -97,16 +97,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpMessageStartLineRequest;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpMessageStartLineRequest
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpMessageStartLineRequest : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -125,7 +115,7 @@ namespace sio {
 		}sio_C_HttpMessageStartLineRequest;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpMessageStartLineResponse
+		//        NAME: sio_C_HttpMessageStartLineResponse
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -138,16 +128,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpMessageStartLineResponse;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpMessageStartLineResponse
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpMessageStartLineResponse : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -165,7 +145,7 @@ namespace sio {
 		}sio_C_HttpMessageStartLineResponse;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpMessageStartLine
+		//        NAME: sio_C_HttpMessageStartLine
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -180,16 +160,6 @@ namespace sio {
 			RESPONSE_START_LINE = 0x00000002,
 		}sio_E_HttpMessageStartLine;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpMessageStartLine
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpMessageStartLine : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -207,7 +177,7 @@ namespace sio {
 		}sio_C_HttpMessageStartLine;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpMessageHeaderFieldsRequest
+		//        NAME: sio_C_HttpMessageHeaderFieldsRequest
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -220,16 +190,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpMessageHeaderFieldsRequest;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpMessageHeaderFieldsRequest
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpMessageHeaderFieldsRequest : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -244,7 +204,7 @@ namespace sio {
 		}sio_C_HttpMessageHeaderFieldsRequest;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpMessageHeaderFieldsResponse
+		//        NAME: sio_C_HttpMessageHeaderFieldsResponse
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -257,16 +217,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpMessageHeaderFieldsResponse;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpMessageHeaderFieldsResponse
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpMessageHeaderFieldsResponse : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -281,7 +231,7 @@ namespace sio {
 		}sio_C_HttpMessageHeaderFieldsResponse;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpMessageHeaderFields
+		//        NAME: sio_C_HttpMessageHeaderFields
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -296,16 +246,6 @@ namespace sio {
 			RESPONSE_HEADER_FIELDS = 0x00000002,
 		}sio_E_HttpMessageHeaderFields;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpMessageHeaderFields
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpMessageHeaderFields : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -322,7 +262,7 @@ namespace sio {
 		}sio_C_HttpMessageHeaderFields;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpMessageMessageBodyRequest
+		//        NAME: sio_C_HttpMessageMessageBodyRequest
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -335,16 +275,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpMessageMessageBodyRequest;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpMessageMessageBodyRequest
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpMessageMessageBodyRequest : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -360,7 +290,7 @@ namespace sio {
 		}sio_C_HttpMessageMessageBodyRequest;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpMessageMessageBodyResponse
+		//        NAME: sio_C_HttpMessageMessageBodyResponse
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -373,16 +303,6 @@ namespace sio {
 			NONE = 0x00000000,
 		}sio_E_HttpMessageMessageBodyResponse;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpMessageMessageBodyResponse
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpMessageMessageBodyResponse : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -398,7 +318,7 @@ namespace sio {
 		}sio_C_HttpMessageMessageBodyResponse;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpMessageMessageBody
+		//        NAME: sio_C_HttpMessageMessageBody
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -413,16 +333,6 @@ namespace sio {
 			RESPONSE_MESSAGE_BODY = 0x00000002,
 		}sio_E_HttpMessageMessageBody;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpMessageMessageBody
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpMessageMessageBody : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
@@ -439,7 +349,7 @@ namespace sio {
 		}sio_C_HttpMessageMessageBody;
 
 		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_E_HttpMessage
+		//        NAME: sio_C_HttpMessage
 		// DESCRIPTION: This is the structure create to hold all the NAME related .
 		//   ARGUMENTS: N/A
 		// USES GLOBAL: N/A
@@ -455,16 +365,6 @@ namespace sio {
 			MESSAGE_BODY_MESSAGE = 0x00000004,
 		}sio_E_HttpMessage;
 
-		////////////////////////////////////////////////////////////////////////////////
-		//        NAME: sio_C_HttpMessage
-		// DESCRIPTION: This is the structure create to hold all the NAME related .
-		//   ARGUMENTS: N/A
-		// USES GLOBAL: N/A
-		// MODIFIES GL: N/A
-		//     RETURNS: N/A
-		//      AUTHOR: SHERIFI
-		// AUTHOR/DATE: GMT Saturday, July 12, 2020
-		////////////////////////////////////////////////////////////////////////////////
 		typedef class sio_C_HttpMessage : sio_S_HttpControlers {
 		private:
 			const char* sio_V_name;
